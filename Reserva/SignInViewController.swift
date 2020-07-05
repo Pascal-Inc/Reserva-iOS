@@ -29,9 +29,9 @@ class SignInViewController: UIViewController {
         // Do some firebase stuff before pushing/showing choose location screen
         performSegue(withIdentifier: "signedIn", sender: nil)
     }
-    @IBAction func skipClick(_ sender: Any) {
-        // Just sign in directly, first ask to set name
-        performSegue(withIdentifier: "signedIn", sender: nil)
+    
+    @IBAction func dismissKeyboard(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
     
     /*

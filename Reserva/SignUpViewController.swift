@@ -22,6 +22,9 @@ class SignUpViewController: UIViewController {
         // Dismiss screen
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func dismissKeyboard(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
     
 
     /*
