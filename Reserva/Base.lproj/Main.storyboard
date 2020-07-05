@@ -124,6 +124,15 @@
                     <view key="view" contentMode="scaleToFill" id="dxK-Xx-Xbc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Table view cells showing list of events and images if required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdy-Ez-ZlI">
+                                <rect key="frame" x="20" y="140" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="zkp-vL-l3M"/>
                     </view>
@@ -131,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3V6-OC-Dd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2718.840579710145" y="454.6875"/>
+            <point key="canvasLocation" x="2682.608695652174" y="630.80357142857144"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="WvH-qK-PhJ">
@@ -140,6 +149,13 @@
                     <view key="view" contentMode="scaleToFill" id="ocd-dB-NQ8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="344-Ek-AE8">
+                                <rect key="frame" x="87" y="239" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rdy-Bw-vF2"/>
                     </view>
@@ -147,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvq-4v-yt4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2718.840579710145" y="-194.19642857142856"/>
+            <point key="canvasLocation" x="2684" y="-18"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="SAD-3y-ajd">
@@ -267,7 +283,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3f2-LY-dSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726" y="725"/>
+            <point key="canvasLocation" x="1694" y="903"/>
         </scene>
         <!--Search-->
         <scene sceneID="MEP-wU-4hX">
@@ -276,6 +292,13 @@
                     <view key="view" contentMode="scaleToFill" id="mb0-ac-a9p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aN2-7e-o9H">
+                                <rect key="frame" x="0.0" y="95" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="e4R-dc-tZQ"/>
                     </view>
@@ -283,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pss-Ta-FIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="1146"/>
+            <point key="canvasLocation" x="2684" y="1322"/>
         </scene>
         <!--Account-->
         <scene sceneID="KXx-kJ-qiU">
@@ -292,6 +315,15 @@
                     <view key="view" contentMode="scaleToFill" id="cr8-gT-iln">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name, prof pic, location, notifs, necessary settings, can be a table view controller" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlU-zC-2ZC">
+                                <rect key="frame" x="20" y="360" width="374" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RjZ-2j-ISn"/>
                     </view>
@@ -299,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMh-oE-I9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="1876"/>
+            <point key="canvasLocation" x="2682.608695652174" y="2051.7857142857142"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="dII-bz-Bud">
@@ -444,6 +476,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="hideKeyboard:" destination="fT1-aA-PKR" eventType="editingDidEndOnExit" id="s53-AJ-o2N"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -469,7 +504,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FF6-kU-e37"/>
-        <segue reference="4Ou-ch-tKc"/>
+        <segue reference="sxn-Nb-6o8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>

@@ -1,5 +1,5 @@
 //
-//  ChooseLocationViewController.swift
+//  UpcomingEventsViewController.swift
 //  Reserva
 //
 //  Created by Granwyn Tan on 5/7/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChooseLocationViewController: UIViewController {
+class UpcomingEventsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,7 @@ class ChooseLocationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func hideKeyboard(_ sender: UITextField) {
-        sender.resignFirstResponder()
-    }
-    
+
     /*
     // MARK: - Navigation
 
