@@ -20,7 +20,7 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func signInClick(_ sender: Any) {
         // Dismiss screen
-        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func dismissKeyboard(_ sender: UITextField) {
         sender.resignFirstResponder()
