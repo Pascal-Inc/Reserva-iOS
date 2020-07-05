@@ -52,8 +52,9 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func nextClick(_ sender: Any) {
-        defaults.set(currentLocation!.latitude, forKey: "userLatitude")
-        defaults.set(currentLocation!.longitude, forKey: "userLongitude")
+        locationManager.stopUpdatingLocation()
+        defaults.set(userLatitude, forKey: "userLatitude")
+        defaults.set(userLongitude, forKey: "userLongitude")
         self.performSegue(withIdentifier: "seeAccount", sender: nil)
     }
     
@@ -61,7 +62,7 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
         currentLocation = manager.location!.coordinate
         userLatitude = currentLocation!.latitude
         userLongitude = currentLocation!.longitude
-        print("Locations = \(currentLocation!.latitude) \(currentLocation!.longitude)")
+        print("Locations = \(currentLocation!.latitude), \(currentLocation!.longitude)")
         let userLocation = locations.last
         let viewRegion = MKCoordinateRegion(center: (userLocation?.coordinate)!, latitudinalMeters: 600, longitudinalMeters: 600)
         self.map.setRegion(viewRegion, animated: true)
