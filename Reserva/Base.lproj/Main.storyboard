@@ -104,13 +104,13 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="dFJ-Xb-8Pp">
                             <connections>
                                 <action selector="nextClick:" destination="Udm-0r-bqR" id="9Nb-yM-1bG"/>
+                                <segue destination="DUT-ji-2LA" kind="show" id="4Ou-ch-tKc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="map" destination="AiY-5L-LEZ" id="GpF-C0-aBD"/>
                         <segue destination="fT1-aA-PKR" kind="show" identifier="manualLocation" id="FF6-kU-e37"/>
-                        <segue destination="DUT-ji-2LA" kind="show" identifier="seeAccount" id="IuJ-gq-yrl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJ2-yk-lBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -424,10 +424,10 @@
             </objects>
             <point key="canvasLocation" x="-1457.9710144927537" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Location-->
         <scene sceneID="P7H-az-Yd3">
             <objects>
-                <viewController id="fT1-aA-PKR" sceneMemberID="viewController">
+                <viewController id="fT1-aA-PKR" customClass="ChooseLocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FU3-1R-edP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -449,7 +449,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DuI-c6-wSS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5Ha-LB-F7p"/>
+                    <navigationItem key="navigationItem" title="Choose Location" id="5Ha-LB-F7p">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="UaS-Zw-zBb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hVA-IV-voN">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="DUT-ji-2LA" kind="show" id="sxn-Nb-6o8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3c-ob-MtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,6 +469,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FF6-kU-e37"/>
+        <segue reference="4Ou-ch-tKc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>

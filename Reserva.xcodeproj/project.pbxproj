@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */; };
 		897E2B5324B1C84C000903A8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5224B1C84C000903A8 /* TabBarViewController.swift */; };
+		899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */; };
 		89DA116824AF6C0400496F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA116724AF6C0400496F3C /* AppDelegate.swift */; };
 		89DA116A24AF6C0400496F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA116924AF6C0400496F3C /* SceneDelegate.swift */; };
 		89DA116C24AF6C0400496F3C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA116B24AF6C0400496F3C /* WelcomeViewController.swift */; };
@@ -17,12 +18,12 @@
 		89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */; };
 		89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117B24AF713400496F3C /* SignInViewController.swift */; };
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
-		89DA118024AF72BB00496F3C /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117F24AF72BB00496F3C /* ChooseLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
 		897E2B5224B1C84C000903A8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
 		89DA116424AF6C0400496F3C /* Reserva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reserva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DA116724AF6C0400496F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89DA116924AF6C0400496F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		89DA117524AF6C0900496F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89DA117B24AF713400496F3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		89DA117F24AF72BB00496F3C /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +75,9 @@
 				89DA116B24AF6C0400496F3C /* WelcomeViewController.swift */,
 				89DA117B24AF713400496F3C /* SignInViewController.swift */,
 				89DA117D24AF715000496F3C /* SignUpViewController.swift */,
-				89DA117F24AF72BB00496F3C /* ChooseLocationViewController.swift */,
 				897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */,
 				897E2B5224B1C84C000903A8 /* TabBarViewController.swift */,
+				899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 				897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */,
 				89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */,
 				89DA116C24AF6C0400496F3C /* WelcomeViewController.swift in Sources */,
-				89DA118024AF72BB00496F3C /* ChooseLocationViewController.swift in Sources */,
 				89DA116824AF6C0400496F3C /* AppDelegate.swift in Sources */,
 				89DA116A24AF6C0400496F3C /* SceneDelegate.swift in Sources */,
+				899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */,
 				89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

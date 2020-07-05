@@ -2,7 +2,7 @@
 //  ChooseLocationViewController.swift
 //  Reserva
 //
-//  Created by Granwyn Tan on 3/7/20.
+//  Created by Granwyn Tan on 5/7/20.
 //  Copyright © 2020 Pascal Inc. All rights reserved.
 //
 
