@@ -81,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="157" y="903"/>
         </scene>
-        <!--Get Location View Controller-->
+        <!--Get Location-->
         <scene sceneID="NOR-Oq-sZX">
             <objects>
                 <viewController id="Udm-0r-bqR" customClass="GetLocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiY-5L-LEZ">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="Udm-0r-bqR" id="gvw-4B-7q9"/>
@@ -100,7 +100,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RuP-Uz-Vzx"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RIt-gQ-aFi">
+                    <navigationItem key="navigationItem" title="Get Location" id="RIt-gQ-aFi">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="dFJ-Xb-8Pp">
                             <connections>
                                 <action selector="nextClick:" destination="Udm-0r-bqR" id="9Nb-yM-1bG"/>

@@ -9,6 +9,9 @@
 import UIKit
 import MapKit
 
+var userLatitude: Any?
+var userLongitude: Any?
+
 class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
 
     var currentLocation: CLLocationCoordinate2D?
@@ -20,13 +23,15 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
         self.locationManager.requestWhenInUseAuthorization()
-        if CLLocationManager.locationServicesEnabled() {
+        if CLLocationManager.authorizationStatus() == .notDetermined {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
-        } else {
-            let alert = UIAlertController(title: "Location access denied for \"Reserva\"", message: "Allow reserva to access your location?", preferredStyle: .alert)
+        } else if CLLocationManager.authorizationStatus() == .denied ||  CLLocationManager.authorizationStatus() == .restricted {
+            let alert = UIAlertController(title: "Location access denied for \"Reserva\"", message: "Allow \"Reserva\" to access your location?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Open Settings", style: .cancel, handler: {action in
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
             }))
@@ -54,6 +59,8 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = manager.location!.coordinate
+        userLatitude = currentLocation!.latitude
+        userLongitude = currentLocation!.longitude
         print("Locations = \(currentLocation!.latitude) \(currentLocation!.longitude)")
         let userLocation = locations.last
         let viewRegion = MKCoordinateRegion(center: (userLocation?.coordinate)!, latitudinalMeters: 600, longitudinalMeters: 600)
