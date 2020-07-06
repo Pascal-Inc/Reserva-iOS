@@ -40,7 +40,7 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
-                                    <segue destination="hHv-0i-gEo" kind="show" id="8Ze-Yz-Ok7"/>
+                                    <segue destination="hHv-0i-gEo" kind="show" identifier="getStarted" id="8Ze-Yz-Ok7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
@@ -500,6 +500,12 @@
                         <viewLayoutGuide key="safeArea" id="XEx-De-QFO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="yx5-ba-3w8"/>
+                    <connections>
+                        <outlet property="chooseCityButton" destination="VwI-aK-cX0" id="xuZ-QQ-Ifg"/>
+                        <outlet property="subtitleLabel" destination="FWv-bB-AWd" id="eKQ-3U-3zC"/>
+                        <outlet property="titleLabel" destination="87O-Kp-3ys" id="4v8-3a-YoB"/>
+                        <outlet property="useLocationButton" destination="Xix-IF-Ml5" id="mtc-ow-w8t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJC-G4-Al9" sceneMemberID="firstResponder"/>
             </objects>

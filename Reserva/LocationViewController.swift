@@ -10,21 +10,29 @@ import UIKit
 
 class LocationViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var titleLabel: UILabel!
+        @IBOutlet weak var subtitleLabel: UILabel!
+        
+        @IBOutlet weak var useLocationButton: UIButton!
+        @IBOutlet weak var chooseCityButton: UIButton!
+        
+        
+        
+        func UIsetup () {
+            
+            titleLabel.textColor = color1
+            subtitleLabel.textColor = color2
+            
+            useLocationButton.layer.cornerRadius = CGFloat(cornerRadius1)
+            useLocationButton.backgroundColor = color1
+            useLocationButton.setTitleColor(color3, for: .normal)
+            chooseCityButton.setTitleColor(color1, for: .normal)
+        }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            return UIsetup()
+        }
 
-        // Do any additional setup after loading the view.
+
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}

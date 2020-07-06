@@ -16,7 +16,9 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var getStartedButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     
+    
     func UIsetup () {
+        
         titleLabel.textColor = color1
         subtitleLabel.textColor = color2
         
