@@ -25,22 +25,6 @@
 		89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117B24AF713400496F3C /* SignInViewController.swift */; };
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
-		B481F3F224B2ECF100CCEC12 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B481F3E224B2ECEE00CCEC12 /* FBSDKShareKit.framework */; };
-		B481F3F324B2ECF100CCEC12 /* FBSDKLoginKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = B481F3E324B2ECEF00CCEC12 /* FBSDKLoginKit.framework.dSYM */; };
-		B481F3F424B2ECF100CCEC12 /* FBSDKShareKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = B481F3E424B2ECEF00CCEC12 /* FBSDKShareKit.framework.dSYM */; };
-		B481F3F524B2ECF100CCEC12 /* E84C7029-54D1-3F39-96D7-6D041BAE38A2.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3E524B2ECEF00CCEC12 /* E84C7029-54D1-3F39-96D7-6D041BAE38A2.bcsymbolmap */; };
-		B481F3F624B2ECF100CCEC12 /* FBSDKGamingServicesKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = B481F3E624B2ECEF00CCEC12 /* FBSDKGamingServicesKit.framework.dSYM */; };
-		B481F3F724B2ECF100CCEC12 /* 20952774-7CBD-393F-A9E6-03BF5630D415.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3E724B2ECEF00CCEC12 /* 20952774-7CBD-393F-A9E6-03BF5630D415.bcsymbolmap */; };
-		B481F3F824B2ECF100CCEC12 /* 0849AA56-244A-3314-940C-DE5558E01A59.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3E824B2ECEF00CCEC12 /* 0849AA56-244A-3314-940C-DE5558E01A59.bcsymbolmap */; };
-		B481F3F924B2ECF100CCEC12 /* FBSDKGamingServicesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B481F3E924B2ECF000CCEC12 /* FBSDKGamingServicesKit.framework */; };
-		B481F3FA24B2ECF100CCEC12 /* FE92DE36-1542-3CC3-BF0C-878043C93AA0.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3EA24B2ECF000CCEC12 /* FE92DE36-1542-3CC3-BF0C-878043C93AA0.bcsymbolmap */; };
-		B481F3FB24B2ECF100CCEC12 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B481F3EB24B2ECF000CCEC12 /* FBSDKCoreKit.framework */; };
-		B481F3FC24B2ECF100CCEC12 /* 66DD0532-E01F-397A-9EDA-1312D3D87681.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3EC24B2ECF000CCEC12 /* 66DD0532-E01F-397A-9EDA-1312D3D87681.bcsymbolmap */; };
-		B481F3FD24B2ECF100CCEC12 /* 2972D33C-06AE-35C7-9691-C1300CAD5784.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3ED24B2ECF100CCEC12 /* 2972D33C-06AE-35C7-9691-C1300CAD5784.bcsymbolmap */; };
-		B481F3FE24B2ECF100CCEC12 /* 999F4D20-D94F-3710-A2B5-A0D4F4A54756.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3EE24B2ECF100CCEC12 /* 999F4D20-D94F-3710-A2B5-A0D4F4A54756.bcsymbolmap */; };
-		B481F3FF24B2ECF100CCEC12 /* FBSDKCoreKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = B481F3EF24B2ECF100CCEC12 /* FBSDKCoreKit.framework.dSYM */; };
-		B481F40024B2ECF100CCEC12 /* 3B0E79BB-61F8-337B-B6CE-4C7196498AC2.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = B481F3F024B2ECF100CCEC12 /* 3B0E79BB-61F8-337B-B6CE-4C7196498AC2.bcsymbolmap */; };
-		B481F40124B2ECF100CCEC12 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B481F3F124B2ECF100CCEC12 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,22 +48,6 @@
 		89DA117B24AF713400496F3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		B481F3E224B2ECEE00CCEC12 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		B481F3E324B2ECEF00CCEC12 /* FBSDKLoginKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = FBSDKLoginKit.framework.dSYM; sourceTree = "<group>"; };
-		B481F3E424B2ECEF00CCEC12 /* FBSDKShareKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = FBSDKShareKit.framework.dSYM; sourceTree = "<group>"; };
-		B481F3E524B2ECEF00CCEC12 /* E84C7029-54D1-3F39-96D7-6D041BAE38A2.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "E84C7029-54D1-3F39-96D7-6D041BAE38A2.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3E624B2ECEF00CCEC12 /* FBSDKGamingServicesKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = FBSDKGamingServicesKit.framework.dSYM; sourceTree = "<group>"; };
-		B481F3E724B2ECEF00CCEC12 /* 20952774-7CBD-393F-A9E6-03BF5630D415.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20952774-7CBD-393F-A9E6-03BF5630D415.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3E824B2ECEF00CCEC12 /* 0849AA56-244A-3314-940C-DE5558E01A59.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "0849AA56-244A-3314-940C-DE5558E01A59.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3E924B2ECF000CCEC12 /* FBSDKGamingServicesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKGamingServicesKit.framework; sourceTree = "<group>"; };
-		B481F3EA24B2ECF000CCEC12 /* FE92DE36-1542-3CC3-BF0C-878043C93AA0.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "FE92DE36-1542-3CC3-BF0C-878043C93AA0.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3EB24B2ECF000CCEC12 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		B481F3EC24B2ECF000CCEC12 /* 66DD0532-E01F-397A-9EDA-1312D3D87681.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "66DD0532-E01F-397A-9EDA-1312D3D87681.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3ED24B2ECF100CCEC12 /* 2972D33C-06AE-35C7-9691-C1300CAD5784.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2972D33C-06AE-35C7-9691-C1300CAD5784.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3EE24B2ECF100CCEC12 /* 999F4D20-D94F-3710-A2B5-A0D4F4A54756.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "999F4D20-D94F-3710-A2B5-A0D4F4A54756.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3EF24B2ECF100CCEC12 /* FBSDKCoreKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = FBSDKCoreKit.framework.dSYM; sourceTree = "<group>"; };
-		B481F3F024B2ECF100CCEC12 /* 3B0E79BB-61F8-337B-B6CE-4C7196498AC2.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3B0E79BB-61F8-337B-B6CE-4C7196498AC2.bcsymbolmap"; sourceTree = "<group>"; };
-		B481F3F124B2ECF100CCEC12 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B481F3F924B2ECF100CCEC12 /* FBSDKGamingServicesKit.framework in Frameworks */,
-				B481F3FB24B2ECF100CCEC12 /* FBSDKCoreKit.framework in Frameworks */,
-				B481F40124B2ECF100CCEC12 /* FBSDKLoginKit.framework in Frameworks */,
-				B481F3F224B2ECF100CCEC12 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +80,6 @@
 		89DA116624AF6C0400496F3C /* Reserva */ = {
 			isa = PBXGroup;
 			children = (
-				B481F3E124B2EC8E00CCEC12 /* Frameworks */,
 				89DA116724AF6C0400496F3C /* AppDelegate.swift */,
 				89DA116924AF6C0400496F3C /* SceneDelegate.swift */,
 				89DA116B24AF6C0400496F3C /* WelcomeViewController.swift */,
@@ -138,29 +101,6 @@
 				89DA117524AF6C0900496F3C /* Info.plist */,
 			);
 			path = Reserva;
-			sourceTree = "<group>";
-		};
-		B481F3E124B2EC8E00CCEC12 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B481F3EA24B2ECF000CCEC12 /* FE92DE36-1542-3CC3-BF0C-878043C93AA0.bcsymbolmap */,
-				B481F3E424B2ECEF00CCEC12 /* FBSDKShareKit.framework.dSYM */,
-				B481F3F024B2ECF100CCEC12 /* 3B0E79BB-61F8-337B-B6CE-4C7196498AC2.bcsymbolmap */,
-				B481F3EC24B2ECF000CCEC12 /* 66DD0532-E01F-397A-9EDA-1312D3D87681.bcsymbolmap */,
-				B481F3E824B2ECEF00CCEC12 /* 0849AA56-244A-3314-940C-DE5558E01A59.bcsymbolmap */,
-				B481F3EE24B2ECF100CCEC12 /* 999F4D20-D94F-3710-A2B5-A0D4F4A54756.bcsymbolmap */,
-				B481F3ED24B2ECF100CCEC12 /* 2972D33C-06AE-35C7-9691-C1300CAD5784.bcsymbolmap */,
-				B481F3E724B2ECEF00CCEC12 /* 20952774-7CBD-393F-A9E6-03BF5630D415.bcsymbolmap */,
-				B481F3E524B2ECEF00CCEC12 /* E84C7029-54D1-3F39-96D7-6D041BAE38A2.bcsymbolmap */,
-				B481F3EB24B2ECF000CCEC12 /* FBSDKCoreKit.framework */,
-				B481F3EF24B2ECF100CCEC12 /* FBSDKCoreKit.framework.dSYM */,
-				B481F3E924B2ECF000CCEC12 /* FBSDKGamingServicesKit.framework */,
-				B481F3E624B2ECEF00CCEC12 /* FBSDKGamingServicesKit.framework.dSYM */,
-				B481F3F124B2ECF100CCEC12 /* FBSDKLoginKit.framework */,
-				B481F3E324B2ECEF00CCEC12 /* FBSDKLoginKit.framework.dSYM */,
-				B481F3E224B2ECEE00CCEC12 /* FBSDKShareKit.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,20 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B481F3FE24B2ECF100CCEC12 /* 999F4D20-D94F-3710-A2B5-A0D4F4A54756.bcsymbolmap in Resources */,
-				B481F3F724B2ECF100CCEC12 /* 20952774-7CBD-393F-A9E6-03BF5630D415.bcsymbolmap in Resources */,
-				B481F3F824B2ECF100CCEC12 /* 0849AA56-244A-3314-940C-DE5558E01A59.bcsymbolmap in Resources */,
 				89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */,
-				B481F3F624B2ECF100CCEC12 /* FBSDKGamingServicesKit.framework.dSYM in Resources */,
-				B481F3FF24B2ECF100CCEC12 /* FBSDKCoreKit.framework.dSYM in Resources */,
-				B481F3F424B2ECF100CCEC12 /* FBSDKShareKit.framework.dSYM in Resources */,
 				89DA117124AF6C0900496F3C /* Assets.xcassets in Resources */,
-				B481F3FD24B2ECF100CCEC12 /* 2972D33C-06AE-35C7-9691-C1300CAD5784.bcsymbolmap in Resources */,
-				B481F3FC24B2ECF100CCEC12 /* 66DD0532-E01F-397A-9EDA-1312D3D87681.bcsymbolmap in Resources */,
-				B481F3F524B2ECF100CCEC12 /* E84C7029-54D1-3F39-96D7-6D041BAE38A2.bcsymbolmap in Resources */,
-				B481F3FA24B2ECF100CCEC12 /* FE92DE36-1542-3CC3-BF0C-878043C93AA0.bcsymbolmap in Resources */,
-				B481F40024B2ECF100CCEC12 /* 3B0E79BB-61F8-337B-B6CE-4C7196498AC2.bcsymbolmap in Resources */,
-				B481F3F324B2ECF100CCEC12 /* FBSDKLoginKit.framework.dSYM in Resources */,
 				89DA116F24AF6C0400496F3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
