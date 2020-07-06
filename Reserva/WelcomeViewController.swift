@@ -10,9 +10,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    func UIsetup () {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        return UIsetup()
     }
 
 
