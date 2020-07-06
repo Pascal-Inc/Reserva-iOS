@@ -23,7 +23,6 @@ class WelcomeViewController: UIViewController {
         getStartedButton.layer.cornerRadius = CGFloat(cornerRadius1)
         getStartedButton.backgroundColor = color1
         getStartedButton.setTitleColor(color3, for: .normal)
-        
         signInButton.setTitleColor(color1, for: .normal)
     }
     

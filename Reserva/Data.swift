@@ -15,7 +15,7 @@ var color3 = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
 
 var cornerRadius1 = 5
 
-func setPropertiesOf(_ buttonName: UIButton, _ buttonCornerRadiusValue: CGFloat, _ buttonText: String, _ buttonBackgroundColor: UIColor){
+func buttonstyle1(_ buttonName: UIButton, _ buttonCornerRadiusValue: CGFloat, _ buttonText: String, _ buttonBackgroundColor: UIColor){
     buttonName.layer.cornerRadius = buttonCornerRadiusValue
     buttonName.setTitle(buttonText, for: .normal)
     buttonName.backgroundColor = buttonBackgroundColor
