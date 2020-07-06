@@ -109,18 +109,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yG-4i-OC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1107" y="1452"/>
+            <point key="canvasLocation" x="-197.10144927536234" y="1451.7857142857142"/>
         </scene>
         <!--Get Location-->
         <scene sceneID="NOR-Oq-sZX">
             <objects>
                 <viewController id="Udm-0r-bqR" customClass="GetLocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21y-qh-sy7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiY-5L-LEZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="Udm-0r-bqR" id="gvw-4B-7q9"/>
@@ -145,14 +145,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJ2-yk-lBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="1919"/>
+            <point key="canvasLocation" x="1700.0000000000002" y="1918.5267857142856"/>
         </scene>
         <!--Events-->
         <scene sceneID="Qej-Kb-JVQ">
             <objects>
                 <viewController id="3HB-9S-VCI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxK-Xx-Xbc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Table view cells showing list of events and images if required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdy-Ez-ZlI">
@@ -177,7 +177,7 @@
             <objects>
                 <viewController id="MNd-Kf-a1O" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ocd-dB-NQ8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="344-Ek-AE8">
@@ -214,14 +214,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3f2-LY-dSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2745" y="1339"/>
+            <point key="canvasLocation" x="3655.0724637681164" y="1338.6160714285713"/>
         </scene>
         <!--Search-->
         <scene sceneID="MEP-wU-4hX">
             <objects>
                 <viewController id="rdv-aT-SN9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mb0-ac-a9p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aN2-7e-o9H">
@@ -237,14 +237,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pss-Ta-FIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3833" y="1339"/>
+            <point key="canvasLocation" x="4742.0289855072469" y="1338.6160714285713"/>
         </scene>
         <!--Account-->
         <scene sceneID="KXx-kJ-qiU">
             <objects>
                 <viewController id="D0q-Qe-YOx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cr8-gT-iln">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name, prof pic, location, notifs, necessary settings, can be a table view controller" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlU-zC-2ZC">
@@ -374,11 +374,11 @@
             <objects>
                 <viewController id="fT1-aA-PKR" customClass="ChooseLocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FU3-1R-edP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s2v-Sj-YcE">
-                                <rect key="frame" x="0.0" y="171" width="414" height="671"/>
+                                <rect key="frame" x="0.0" y="182" width="414" height="714"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="fT1-aA-PKR" id="QYw-5D-RqQ"/>
@@ -557,6 +557,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ue-eM-oCA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2955" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JVd-K2-Ieh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L9n-lW-44q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="a9G-g4-2OC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5mX-og-xvb" kind="relationship" relationship="rootViewController" id="zcF-UO-Y4u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDZ-vm-o3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1107.2463768115942" y="1451.7857142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
