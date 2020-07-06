@@ -23,6 +23,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func signUpClick(_ sender: Any) {
         // Push/show sign up screen
+        performSegue(withIdentifier: "signUp", sender: nil)
         
     }
     @IBAction func signInClick(_ sender: Any) {
