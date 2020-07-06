@@ -1,2 +1,2 @@
 # Reserva-iOS
-An app that helps with organisation of timeslots and bookings in rooms and at events
+An app that helps to improve, enhance and organise booking and scheduling of timeslots in rooms and at events.
