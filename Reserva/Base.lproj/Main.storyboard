@@ -35,7 +35,7 @@
                         </userGuides>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-VA-oCM">
-                                <rect key="frame" x="45" y="787" width="324" height="49"/>
+                                <rect key="frame" x="30" y="787" width="354" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Get Started"/>
@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqO-hd-XAL">
-                                <rect key="frame" x="45" y="836" width="324" height="49"/>
+                                <rect key="frame" x="30" y="836" width="354" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Sign in"/>
@@ -76,6 +76,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="095-oX-jDa"/>
                     <connections>
+                        <outlet property="getStartedButton" destination="kRo-VA-oCM" id="5PF-CS-XTW"/>
+                        <outlet property="signInButton" destination="QqO-hd-XAL" id="tvX-nL-VxJ"/>
                         <outlet property="subtitleLabel" destination="GNB-yr-4Qa" id="f3F-Fq-uwd"/>
                         <outlet property="titleLabel" destination="kSw-0F-BKf" id="Fwg-gi-Ahi"/>
                     </connections>
@@ -464,7 +466,7 @@
                         </userGuides>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-IF-Ml5">
-                                <rect key="frame" x="45" y="787" width="324" height="49"/>
+                                <rect key="frame" x="30" y="787" width="354" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Use My Location"/>
@@ -488,7 +490,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwI-aK-cX0">
-                                <rect key="frame" x="45" y="836" width="324" height="49"/>
+                                <rect key="frame" x="30" y="836" width="354" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Choose City"/>
@@ -501,7 +503,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJC-G4-Al9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="123"/>
+            <point key="canvasLocation" x="2163.768115942029" y="122.54464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aSp-iC-Bbg">
