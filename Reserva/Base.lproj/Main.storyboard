@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UjX-go-E1b">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -18,49 +18,37 @@
                             <userLayoutGuide location="384" affinity="minX"/>
                             <userLayoutGuide location="30" affinity="minX"/>
                             <userLayoutGuide location="59" affinity="minX"/>
-                            <userLayoutGuide location="354" affinity="minX"/>
+                            <userLayoutGuide location="353" affinity="minX"/>
                             <userLayoutGuide location="50" affinity="minY"/>
                             <userLayoutGuide location="866" affinity="minY"/>
-                            <userLayoutGuide location="851" affinity="minY"/>
+                            <userLayoutGuide location="852" affinity="minY"/>
                             <userLayoutGuide location="803" affinity="minY"/>
                             <userLayoutGuide location="45" affinity="minX"/>
                             <userLayoutGuide location="369" affinity="minX"/>
                             <userLayoutGuide location="836" affinity="minY"/>
-                            <userLayoutGuide location="596" affinity="minY"/>
+                            <userLayoutGuide location="595" affinity="minY"/>
                             <userLayoutGuide location="448" affinity="minY"/>
                             <userLayoutGuide location="516" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGw-KJ-yh5">
-                                <rect key="frame" x="308" y="50" width="76" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Or Skip &gt;"/>
-                                <connections>
-                                    <segue destination="nvN-g6-rJB" kind="show" id="3TR-Jk-qrS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY2-44-jJ7">
-                                <rect key="frame" x="45" y="776" width="324" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Use My Location"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-VA-oCM">
                                 <rect key="frame" x="45" y="836" width="324" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Find my city"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <segue destination="nvN-g6-rJB" kind="show" id="eV1-58-C7p"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find your City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
-                                <rect key="frame" x="59" y="448" width="186" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
+                                <rect key="frame" x="59" y="448" width="275" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BookingApp needs your Location in order to deliver the best experience." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-yr-4Qa">
-                                <rect key="frame" x="59" y="516" width="295" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pop-up a tutorial and instructions on how Reserva works" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-yr-4Qa">
+                                <rect key="frame" x="59" y="516" width="294" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -74,14 +62,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-662.31884057971024" y="122.54464285714285"/>
+            <point key="canvasLocation" x="247.82608695652175" y="122.54464285714285"/>
         </scene>
         <!--Select Location-->
         <scene sceneID="k59-BK-yZb">
             <objects>
                 <viewController id="5mX-og-xvb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z0g-dK-evM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-ep-sDw">
@@ -115,11 +103,11 @@
             <objects>
                 <viewController id="Udm-0r-bqR" customClass="GetLocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21y-qh-sy7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiY-5L-LEZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="Udm-0r-bqR" id="gvw-4B-7q9"/>
@@ -151,7 +139,7 @@
             <objects>
                 <viewController id="3HB-9S-VCI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxK-Xx-Xbc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Table view cells showing list of events and images if required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdy-Ez-ZlI">
@@ -169,14 +157,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3V6-OC-Dd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682.608695652174" y="630.80357142857144"/>
+            <point key="canvasLocation" x="3592.753623188406" y="630.80357142857144"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="WvH-qK-PhJ">
             <objects>
                 <viewController id="MNd-Kf-a1O" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ocd-dB-NQ8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="344-Ek-AE8">
@@ -192,14 +180,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvq-4v-yt4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="-18"/>
+            <point key="canvasLocation" x="3592.753623188406" y="-18.080357142857142"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="SAD-3y-ajd">
             <objects>
                 <viewController id="nvN-g6-rJB" customClass="SignInViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bD8-sg-Cep">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username, Email Address or Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5CX-gx-iuh">
@@ -291,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BI-RD-50R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155.07246376811597" y="122.54464285714285"/>
+            <point key="canvasLocation" x="1065.217391304348" y="122.54464285714285"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="BS2-0X-h1L">
@@ -319,7 +307,7 @@
             <objects>
                 <viewController id="rdv-aT-SN9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mb0-ac-a9p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aN2-7e-o9H">
@@ -342,7 +330,7 @@
             <objects>
                 <viewController id="D0q-Qe-YOx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cr8-gT-iln">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name, prof pic, location, notifs, necessary settings, can be a table view controller" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlU-zC-2ZC">
@@ -367,7 +355,7 @@
             <objects>
                 <viewController id="s2R-tJ-RXp" customClass="SignUpViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKp-Zy-XOB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9TD-c4-jh9">
@@ -465,18 +453,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbB-ZO-R1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="-550"/>
+            <point key="canvasLocation" x="1065" y="-545"/>
         </scene>
         <!--Choose Location-->
         <scene sceneID="P7H-az-Yd3">
             <objects>
                 <viewController id="fT1-aA-PKR" customClass="ChooseLocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FU3-1R-edP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s2v-Sj-YcE">
-                                <rect key="frame" x="0.0" y="171" width="414" height="671"/>
+                                <rect key="frame" x="0.0" y="182" width="414" height="714"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="fT1-aA-PKR" id="QYw-5D-RqQ"/>
@@ -511,6 +499,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3c-ob-MtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="921.73913043478262" y="902.67857142857133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uvD-mX-vFL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UjX-go-E1b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="gyr-hy-ScD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z1P-of-BD8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xfb-Ey-Cx6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662.31884057971024" y="122.54464285714285"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
