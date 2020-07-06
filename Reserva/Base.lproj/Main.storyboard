@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.82608695652175" y="122.54464285714285"/>
+            <point key="canvasLocation" x="-354" y="123"/>
         </scene>
         <!--Select Location-->
         <scene sceneID="k59-BK-yZb">
@@ -221,7 +221,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUpClick:" destination="nvN-g6-rJB" eventType="touchUpInside" id="bnS-XD-7Lc"/>
-                                    <segue destination="s2R-tJ-RXp" kind="show" id="51X-mF-Wxq"/>
+                                    <segue destination="s2R-tJ-RXp" kind="showDetail" id="51X-mF-Wxq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-XD-aZq">
@@ -235,13 +235,6 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPJ-TQ-uSd">
                                 <rect key="frame" x="125" y="377" width="207" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwI-yP-DXZ">
-                                <rect key="frame" x="246" y="343" width="112" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -267,21 +260,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign in with Apple"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEm-xz-HtR">
-                                <rect key="frame" x="366" y="341" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="checkmark" catalog="system" backgroundImage="rectangle"/>
-                                <connections>
-                                    <action selector="checkBoxClick:" destination="nvN-g6-rJB" eventType="touchUpInside" id="hGU-aD-ebT"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="v4z-xF-aKC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="I1m-mu-Piq"/>
                     <connections>
-                        <segue destination="5mX-og-xvb" kind="show" identifier="signedIn" id="e7L-CM-qsA"/>
+                        <segue destination="5mX-og-xvb" kind="showDetail" identifier="signedIn" id="e7L-CM-qsA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BI-RD-50R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -507,6 +492,67 @@
             </objects>
             <point key="canvasLocation" x="921.73913043478262" y="902.67857142857133"/>
         </scene>
+        <!--Welcome-->
+        <scene sceneID="Vlq-x1-1Gl">
+            <objects>
+                <viewController id="hHv-0i-gEo" customClass="WelcomeViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kks-vC-jQw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="384" affinity="minX"/>
+                            <userLayoutGuide location="30" affinity="minX"/>
+                            <userLayoutGuide location="59" affinity="minX"/>
+                            <userLayoutGuide location="353" affinity="minX"/>
+                            <userLayoutGuide location="50" affinity="minY"/>
+                            <userLayoutGuide location="866" affinity="minY"/>
+                            <userLayoutGuide location="852" affinity="minY"/>
+                            <userLayoutGuide location="803" affinity="minY"/>
+                            <userLayoutGuide location="45" affinity="minX"/>
+                            <userLayoutGuide location="369" affinity="minX"/>
+                            <userLayoutGuide location="836" affinity="minY"/>
+                            <userLayoutGuide location="595" affinity="minY"/>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="516" affinity="minY"/>
+                            <userLayoutGuide location="207" affinity="minX"/>
+                            <userLayoutGuide location="150" affinity="minY"/>
+                            <userLayoutGuide location="656" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-IF-Ml5">
+                                <rect key="frame" x="45" y="803" width="324" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Get Started"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87O-Kp-3ys">
+                                <rect key="frame" x="30" y="150" width="275" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-yv-2hk">
+                                <rect key="frame" x="45" y="302" width="324" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder Text, Placeholder Text, Placeholder Text, Placeholder Text," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-bB-AWd">
+                                <rect key="frame" x="30" y="656" width="294" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XEx-De-QFO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="yx5-ba-3w8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJC-G4-Al9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="123"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FF6-kU-e37"/>
@@ -514,11 +560,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="placeholder_image" width="1920" height="1280"/>
-        <image name="rectangle" catalog="system" width="128" height="93"/>
     </resources>
 </document>
