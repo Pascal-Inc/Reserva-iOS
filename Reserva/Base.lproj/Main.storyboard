@@ -20,6 +20,12 @@
                             <userLayoutGuide location="59" affinity="minX"/>
                             <userLayoutGuide location="354" affinity="minX"/>
                             <userLayoutGuide location="50" affinity="minY"/>
+                            <userLayoutGuide location="866" affinity="minY"/>
+                            <userLayoutGuide location="851" affinity="minY"/>
+                            <userLayoutGuide location="806" affinity="minY"/>
+                            <userLayoutGuide location="45" affinity="minX"/>
+                            <userLayoutGuide location="369" affinity="minX"/>
+                            <userLayoutGuide location="836" affinity="minY"/>
                         </userGuides>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
@@ -44,6 +50,12 @@
                                 <connections>
                                     <segue destination="nvN-g6-rJB" kind="show" id="3TR-Jk-qrS"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY2-44-jJ7">
+                                <rect key="frame" x="45" y="791" width="324" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Or Skip &gt;"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
