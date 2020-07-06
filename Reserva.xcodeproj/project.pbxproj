@@ -24,6 +24,7 @@
 		89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */; };
 		89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117B24AF713400496F3C /* SignInViewController.swift */; };
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
+		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		89DA117524AF6C0900496F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89DA117B24AF713400496F3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				899D7B0524B2246300D473F8 /* SettingsTableViewController.swift */,
 				899D7B0724B2246F00D473F8 /* EventInfoViewController.swift */,
 				899D7B0924B2248D00D473F8 /* EventRatingsViewController.swift */,
+				B41BA09924B352DC00054B46 /* Data.swift */,
 				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				89DA117024AF6C0900496F3C /* Assets.xcassets */,
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
@@ -189,6 +192,7 @@
 				899D7B0424B2245700D473F8 /* SearchTableViewController.swift in Sources */,
 				899D7B0224B2244500D473F8 /* EventsTableViewController.swift in Sources */,
 				89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */,
+				B41BA09A24B352DC00054B46 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

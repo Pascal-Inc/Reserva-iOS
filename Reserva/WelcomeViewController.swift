@@ -12,10 +12,10 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
-    
+
     func UIsetup () {
-        titleLabel.textColor = UIColor(red: 114/255, green: 147/255, blue: 255/255, alpha: 1.0)
-        subtitleLabel.textColor = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1.0)
+        titleLabel.textColor = color1
+        subtitleLabel.textColor = color2
     }
     
     override func viewDidLoad() {
