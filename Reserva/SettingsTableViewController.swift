@@ -10,6 +10,18 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
+    var row1 = ["Account Details"]
+    var row1Detail = ["Name, Email, Phone Number"]
+    var row2 = ["Location"]
+    var row2Detail = ["City Name: \(userLongitude!), \(userLatitude!)"]
+    var row3 = ["Privacy"]
+    var row3Detail = ["Terms of Service, Privacy Policy"]
+    var row4 = ["Notifications"]
+    var row4Detail = ["Room Bookings, Upcoming Events"]
+    var row5 = ["About Us"]
+    var row5Detail = ["Pascal Inc."]
+    var row6 = ["Log Out"]
+    var row6Detail = [""]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,23 +36,45 @@ class SettingsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 6
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
+        var cellMainText = ""
+        var cellSubText = ""
+        if indexPath.row == 0 {
+            cellMainText = row1[0]
+            cellSubText = row1Detail[0]
+        } else if indexPath.row == 1 {
+            cellMainText = row2[0]
+            cellSubText = row2Detail[0]
+        } else if indexPath.row == 2 {
+            cellMainText = row3[0]
+            cellSubText = row3Detail[0]
+        } else if indexPath.row == 3 {
+            cellMainText = row4[0]
+            cellSubText = row4Detail[0]
+        } else if indexPath.row == 4 {
+            cellMainText = row5[0]
+            cellSubText = row5Detail[0]
+        } else if indexPath.row == 5 {
+            cellMainText = row6[0]
+            cellSubText = row6Detail[0]
+        }
 
+        cell.textLabel?.text = cellMainText
+        cell.detailTextLabel?.text = cellSubText
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
