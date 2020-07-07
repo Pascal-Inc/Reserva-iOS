@@ -31,7 +31,7 @@
                             <userLayoutGuide location="516" affinity="minY"/>
                             <userLayoutGuide location="207" affinity="minX"/>
                             <userLayoutGuide location="150" affinity="minY"/>
-                            <userLayoutGuide location="656" affinity="minY"/>
+                            <userLayoutGuide location="654" affinity="minY"/>
                         </userGuides>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-VA-oCM">
@@ -54,9 +54,10 @@
                                 <rect key="frame" x="45" y="150" width="324" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder Text, Placeholder Text, Placeholder Text, Placeholder Text," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-yr-4Qa">
-                                <rect key="frame" x="30" y="595" width="294" height="79"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-yr-4Qa">
+                                <rect key="frame" x="30" y="595" width="354" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Reserva is an app that will revolutionise and enhance your booking experience at events, rooms and many more, right at your fingertips</string>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -698,9 +699,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="I3F-P2-zXu"/>
-        <segue reference="IOG-2e-GWc"/>
-        <segue reference="sxn-Nb-6o8"/>
+        <segue reference="Qjp-AS-pIW"/>
+        <segue reference="FF6-kU-e37"/>
+        <segue reference="4Ou-ch-tKc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
