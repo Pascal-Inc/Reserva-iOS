@@ -37,4 +37,11 @@ func setButtonStyle(_ buttonName: UIButton, _ buttonCornerRadiusValue: CGFloat, 
         buttonstyle1()
         
     }
+
+    func buttonstyle1() {
+        self.layer.cornerRadius = CGFloat(cornerRadius1)
+        self.backgroundColor = color1
+        self.setTitleColor(color3, for: .normal)
+        self.setTitleColor(color1, for: .normal)
+    }
 }
