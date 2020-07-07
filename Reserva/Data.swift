@@ -24,24 +24,25 @@ func setButtonStyle(_ buttonName: UIButton, _ buttonCornerRadiusValue: CGFloat, 
 @IBDesignable class ButtomCustomStyle1: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        shared()
+        buttonstyle1()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        shared()
+        buttonstyle1()
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        shared()
+        buttonstyle1()
         
     }
     
-    func shared() {
-        self.layer.cornerRadius = 10 // change corner circular radius in px
-        self.layer.borderWidth = 1 // change border width in px
-        self.layer.borderColor = UIColor.black.cgColor // change to any colour u want
     }
 
 }
+func buttonstyle1() {
+self.layer.cornerRadius = CGFloat(cornerRadius1)
+self.backgroundColor = color1
+self.setTitleColor(color3, for: .normal)
+self.setTitleColor(color1, for: .normal)
