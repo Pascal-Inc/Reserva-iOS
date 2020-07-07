@@ -15,8 +15,33 @@ var color3 = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
 
 var cornerRadius1 = 5
 
-func buttonstyle1(_ buttonName: UIButton, _ buttonCornerRadiusValue: CGFloat, _ buttonText: String, _ buttonBackgroundColor: UIColor){
+func setButtonStyle(_ buttonName: UIButton, _ buttonCornerRadiusValue: CGFloat, _ buttonText: String, _ buttonBackgroundColor: UIColor){
     buttonName.layer.cornerRadius = buttonCornerRadiusValue
     buttonName.setTitle(buttonText, for: .normal)
     buttonName.backgroundColor = buttonBackgroundColor
+}
+
+@IBDesignable class ButtomCustomStyle1: UIButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        shared()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        shared()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        shared()
+        
+    }
+    
+    func shared() {
+        self.layer.cornerRadius = 10 // change corner circular radius in px
+        self.layer.borderWidth = 1 // change border width in px
+        self.layer.borderColor = UIColor.black.cgColor // change to any colour u want
+    }
+
 }
