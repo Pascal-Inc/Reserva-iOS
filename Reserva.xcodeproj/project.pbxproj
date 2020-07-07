@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89445C8624B471D3006E956D /* ExtraSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */; };
 		897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */; };
 		897E2B5324B1C84C000903A8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5224B1C84C000903A8 /* TabBarViewController.swift */; };
 		899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSettingsTableViewController.swift; sourceTree = "<group>"; };
 		897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
 		897E2B5224B1C84C000903A8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				899D7B0124B2244500D473F8 /* EventsTableViewController.swift */,
 				899D7B0324B2245700D473F8 /* SearchTableViewController.swift */,
 				899D7B0524B2246300D473F8 /* SettingsTableViewController.swift */,
+				89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */,
 				899D7B0724B2246F00D473F8 /* EventInfoViewController.swift */,
 				899D7B0924B2248D00D473F8 /* EventRatingsViewController.swift */,
 				B41BA09924B352DC00054B46 /* Data.swift */,
@@ -186,6 +189,7 @@
 				89DA116824AF6C0400496F3C /* AppDelegate.swift in Sources */,
 				89DA116A24AF6C0400496F3C /* SceneDelegate.swift in Sources */,
 				899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */,
+				89445C8624B471D3006E956D /* ExtraSettingsTableViewController.swift in Sources */,
 				899D7B0024B223DE00D473F8 /* UpcomingEventsViewController.swift in Sources */,
 				899D7B0624B2246300D473F8 /* SettingsTableViewController.swift in Sources */,
 				899D7B0824B2246F00D473F8 /* EventInfoViewController.swift in Sources */,

@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yG-4i-OC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197.10144927536234" y="1451.7857142857142"/>
+            <point key="canvasLocation" x="-197" y="1587"/>
         </scene>
         <!--Get Location-->
         <scene sceneID="NOR-Oq-sZX">
@@ -283,10 +283,42 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Account" image="person.circle" catalog="system" id="Ftx-MQ-lOF"/>
+                    <connections>
+                        <segue destination="t4n-l1-w68" kind="show" id="GED-Wk-6l8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODe-9M-ABA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5463" y="2200"/>
+        </scene>
+        <!--Setting Title-->
+        <scene sceneID="sir-6O-IsB">
+            <objects>
+                <tableViewController id="t4n-l1-w68" customClass="ExtraSettingsTableViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="feE-sj-qY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YhQ-m1-GVb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YhQ-m1-GVb" id="kLh-jv-vd3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t4n-l1-w68" id="ZuS-xd-VEZ"/>
+                            <outlet property="delegate" destination="t4n-l1-w68" id="Cki-jh-OJ1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Setting Title" id="Ymq-6a-Vvi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6H-BU-IOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6226" y="2207"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="dII-bz-Bud">
@@ -436,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3c-ob-MtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="1452"/>
+            <point key="canvasLocation" x="612" y="1587"/>
         </scene>
         <!--LocationViewController-->
         <scene sceneID="Vlq-x1-1Gl">
@@ -666,9 +698,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qjp-AS-pIW"/>
-        <segue reference="FF6-kU-e37"/>
-        <segue reference="4Ou-ch-tKc"/>
+        <segue reference="I3F-P2-zXu"/>
+        <segue reference="IOG-2e-GWc"/>
+        <segue reference="sxn-Nb-6o8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
