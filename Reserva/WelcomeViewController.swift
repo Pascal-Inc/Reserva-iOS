@@ -22,7 +22,6 @@ class WelcomeViewController: UIViewController {
         titleLabel.textColor = color1
         subtitleLabel.textColor = color2
         
-        buttonstyle1()
         getStartedButton.layer.cornerRadius = CGFloat(cornerRadius1)
         getStartedButton.backgroundColor = color1
         getStartedButton.setTitleColor(color3, for: .normal)
