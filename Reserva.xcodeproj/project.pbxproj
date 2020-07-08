@@ -25,6 +25,7 @@
 		89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */; };
 		89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117B24AF713400496F3C /* SignInViewController.swift */; };
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
+		B40D634924B49D30008A3D29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B40D634824B49D30008A3D29 /* GoogleService-Info.plist */; };
 		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		89DA117524AF6C0900496F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89DA117B24AF713400496F3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B40D634824B49D30008A3D29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 				89DA117024AF6C0900496F3C /* Assets.xcassets */,
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
+				B40D634824B49D30008A3D29 /* GoogleService-Info.plist */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */,
+				B40D634924B49D30008A3D29 /* GoogleService-Info.plist in Resources */,
 				89DA117124AF6C0900496F3C /* Assets.xcassets in Resources */,
 				89DA116F24AF6C0400496F3C /* Main.storyboard in Resources */,
 			);
