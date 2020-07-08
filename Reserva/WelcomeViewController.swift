@@ -13,7 +13,8 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     
-    @IBOutlet weak var getStartedButton: UIButton!
+
+    @IBOutlet var getStartedButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     
     
@@ -21,10 +22,7 @@ class WelcomeViewController: UIViewController {
         
         titleLabel.textColor = color1
         subtitleLabel.textColor = color2
-        
-        getStartedButton.layer.cornerRadius = CGFloat(cornerRadius1)
-        getStartedButton.backgroundColor = color1
-        getStartedButton.setTitleColor(color3, for: .normal)
+        getStartedButton = ButtomCustomStyle1()
         signInButton.setTitleColor(color1, for: .normal)
     }
     
