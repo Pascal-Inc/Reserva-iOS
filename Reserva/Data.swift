@@ -19,23 +19,24 @@ var cornerRadius1 = 5
 class ButtomCustomStyle1: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        buttonstyle1()
+        
+        layer.cornerRadius = CGFloat(cornerRadius1)
+        backgroundColor = color1
+        setTitleColor(color3, for: .normal)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        buttonstyle1()
+        
     }
-    
-    override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        buttonstyle1()
         
     }
 
-    func buttonstyle1() {
-        self.layer.cornerRadius = CGFloat(cornerRadius1)
-        self.backgroundColor = color1
-        self.setTitleColor(color3, for: .normal)
+
+   /* func buttonstyle1() {
+        layer.cornerRadius = CGFloat(cornerRadius1)
+        backgroundColor = color1
+        setTitleColor(color3, for: .normal)
     }
-}
+ /**/*/
