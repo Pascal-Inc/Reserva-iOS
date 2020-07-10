@@ -17,13 +17,14 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var getStartedButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     
-    
+   
     func UIsetup () {
         
         titleLabel.textColor = color1
         subtitleLabel.textColor = color2
         getStartedButton = ButtomCustomStyle1()
         signInButton.setTitleColor(color1, for: .normal)
+        print("xd")
     }
     
     override func viewDidLoad() {
