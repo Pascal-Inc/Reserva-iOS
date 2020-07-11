@@ -11,8 +11,16 @@ import UIKit
 class TabBarViewController: UITabBarController {
     
     func initialiseTabBar() {
+        
         let homeTab = UITabBarItem()
+        homeTab.title = "Home"
+        homeTab.image = UIImage(named: "")
+        homeTab.selectedImage = UIImage(named: "")
+        
         let browseTab  = UITabBarItem()
+        browseTab.title = "Browse"
+        browseTab.image = UIImage(named: "")
+        homeTab.selectedImage = UIImage(named: "")
         
         let HomeVC = HomeViewController()
         HomeVC.tabBarItem = homeTab
