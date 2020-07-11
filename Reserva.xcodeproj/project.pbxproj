@@ -107,13 +107,13 @@
 				899D7B0724B2246F00D473F8 /* EventInfoViewController.swift */,
 				899D7B0924B2248D00D473F8 /* EventRatingsViewController.swift */,
 				B41BA09924B352DC00054B46 /* Data.swift */,
-				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				B4CAE48424B959F400FFC703 /* BrowseViewController.swift */,
 				B4CAE48224B9589700FFC703 /* HomeViewController.swift */,
 				89DA117024AF6C0900496F3C /* Assets.xcassets */,
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
 				B40D634824B49D30008A3D29 /* GoogleService-Info.plist */,
+				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
