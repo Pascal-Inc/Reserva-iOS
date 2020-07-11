@@ -1,26 +1,19 @@
 //
-//  TabBarViewController.swift
+//  BrowseViewController.swift
 //  Reserva
 //
-//  Created by Granwyn Tan on 5/7/20.
+//  Created by Ho Jon Yew on 11/7/20.
 //  Copyright © 2020 Pascal Inc. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
-    func initialiseTabBar() {
-        let HomeVC = HomeViewController()
-        let browseVC = BrowseViewController()
-        let TabBarViewController = UITabBarController()
-        TabBarViewController.viewControllers = [HomeVC,BrowseVC]
+class BrowseViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
     
 

@@ -29,6 +29,7 @@
 		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 		B4CAE48324B9589700FFC703 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE48224B9589700FFC703 /* HomeViewController.swift */; };
+		B4CAE48524B959F400FFC703 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE48424B959F400FFC703 /* BrowseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B4CAE48224B9589700FFC703 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4CAE48424B959F400FFC703 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				899D7B0924B2248D00D473F8 /* EventRatingsViewController.swift */,
 				B41BA09924B352DC00054B46 /* Data.swift */,
 				89DA116D24AF6C0400496F3C /* Main.storyboard */,
+				B4CAE48424B959F400FFC703 /* BrowseViewController.swift */,
 				B4CAE48224B9589700FFC703 /* HomeViewController.swift */,
 				89DA117024AF6C0900496F3C /* Assets.xcassets */,
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 				899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */,
 				89445C8624B471D3006E956D /* ExtraSettingsTableViewController.swift in Sources */,
 				899D7B0024B223DE00D473F8 /* UpcomingEventsViewController.swift in Sources */,
+				B4CAE48524B959F400FFC703 /* BrowseViewController.swift in Sources */,
 				899D7B0624B2246300D473F8 /* SettingsTableViewController.swift in Sources */,
 				899D7B0824B2246F00D473F8 /* EventInfoViewController.swift in Sources */,
 				899D7B0424B2245700D473F8 /* SearchTableViewController.swift in Sources */,

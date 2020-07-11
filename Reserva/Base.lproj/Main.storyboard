@@ -251,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="4477" y="1166"/>
         </scene>
-        <!--View Controller-->
+        <!--bropwseViewControllwe-->
         <scene sceneID="U8Z-p1-1Nm">
             <objects>
-                <viewController id="EoM-Vi-TUs" sceneMemberID="viewController">
+                <viewController title="bropwseViewControllwe" id="EoM-Vi-TUs" customClass="BrowseViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmM-Qi-WeO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
