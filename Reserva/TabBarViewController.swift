@@ -9,16 +9,18 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    
     func initialiseTabBar() {
         let HomeVC = HomeViewController()
-        let browseVC = BrowseViewController()
+        let BrowseVC = BrowseViewController()
         let TabBarViewController = UITabBarController()
         TabBarViewController.viewControllers = [HomeVC,BrowseVC]
-
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        return initialiseTabBar()
         // Do any additional setup after loading the view.
         
     }
