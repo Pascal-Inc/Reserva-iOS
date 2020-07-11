@@ -11,7 +11,6 @@ import MapKit
 
 var userLatitude: Any?
 var userLongitude: Any?
-
 class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
 
     var currentLocation: CLLocationCoordinate2D?
@@ -23,6 +22,8 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        defaults.set(false, forKey: "setLocationAlready")
     }
     override func viewDidAppear(_ animated: Bool) {
         self.locationManager.requestWhenInUseAuthorization()
@@ -52,10 +53,14 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func nextClick(_ sender: Any) {
-        locationManager.stopUpdatingLocation()
-        defaults.set(userLatitude, forKey: "userLatitude")
-        defaults.set(userLongitude, forKey: "userLongitude")
-        self.performSegue(withIdentifier: "seeAccount", sender: nil)
+        let setLocationAlready = defaults.bool(forKey: "setLocationAlready")
+        if setLocationAlready != true {
+            locationManager.stopUpdatingLocation()
+            defaults.set(userLatitude, forKey: "userLatitude")
+            defaults.set(userLongitude, forKey: "userLongitude")
+            self.performSegue(withIdentifier: "seeAccount", sender: nil)
+            defaults.set(true, forKey: "setLocationAlready")
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
