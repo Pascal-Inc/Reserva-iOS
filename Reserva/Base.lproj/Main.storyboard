@@ -235,30 +235,20 @@
             </objects>
             <point key="canvasLocation" x="3655.0724637681164" y="1338.6160714285713"/>
         </scene>
-        <!--Account-->
-        <scene sceneID="KXx-kJ-qiU">
+        <!--View Controller-->
+        <scene sceneID="6qy-Gv-D8t">
             <objects>
-                <viewController id="D0q-Qe-YOx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cr8-gT-iln">
+                <viewController id="wBa-LE-Zom" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L79-Te-a14">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name, prof pic, location, notifs, necessary settings, can be a table view controller" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlU-zC-2ZC">
-                                <rect key="frame" x="20" y="360" width="374" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="RjZ-2j-ISn"/>
+                        <viewLayoutGuide key="safeArea" id="Wzt-CK-OjH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" image="person.circle" catalog="system" id="J3r-Cf-Iop"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IMh-oE-I9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFK-Qd-pZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4716" y="2196"/>
+            <point key="canvasLocation" x="2939" y="2384"/>
         </scene>
         <!--Account-->
         <scene sceneID="zAf-7h-OsI">

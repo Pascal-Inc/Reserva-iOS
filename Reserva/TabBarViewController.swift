@@ -9,13 +9,18 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    func initialiseTabBar() {
+        let HomeVC = ()
+        let broseVC = ()
+        let TabBarViewController = UITabBarController()
+        TabBarViewController.viewControllers = ["HomeVC","BrowseVC"]
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.selectedIndex = 3
-        navigationItem.setHidesBackButton(true, animated: false)
+        
     }
     
 
