@@ -1,22 +1,19 @@
 //
-//  EventInfoViewController.swift
+//  HomeViewController.swift
 //  Reserva
 //
-//  Created by Granwyn Tan on 5/7/20.
+//  Created by Ho Jon Yew on 11/7/20.
 //  Copyright © 2020 Pascal Inc. All rights reserved.
 //
 
 import UIKit
 
-class EventInfoViewController: UIViewController {
+class HomeViewController: UIViewController {
 
-    var settingsName: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = settingsName
-        
     }
     
 

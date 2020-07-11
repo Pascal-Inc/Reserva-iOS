@@ -9,13 +9,38 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
+    
+    func initialiseTabBar() {
+        
+        let homeTab = UITabBarItem()
+        homeTab.title = "Home"
+        homeTab.image = UIImage(named: "")
+        homeTab.selectedImage = UIImage(named: "")
+        
+        let browseTab  = UITabBarItem()
+        browseTab.title = "Browse"
+        browseTab.image = UIImage(named: "")
+        homeTab.selectedImage = UIImage(named: "")
+        
+        let HomeVC = HomeViewController()
+        HomeVC.tabBarItem = homeTab
+        
+        let BrowseVC = BrowseViewController()
+        BrowseVC.tabBarItem = browseTab
+        
+        let TabBarViewController = UITabBarController()
+        TabBarViewController.viewControllers = [HomeVC,BrowseVC]
+        TabBarViewController.selectedViewController = HomeVC
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        self.selectedIndex = 3
-        navigationItem.setHidesBackButton(true, animated: false)
+        return initialiseTabBar()
+        
+        
     }
     
 
