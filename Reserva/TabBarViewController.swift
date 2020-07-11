@@ -15,6 +15,7 @@ class TabBarViewController: UITabBarController {
         let BrowseVC = BrowseViewController()
         let TabBarViewController = UITabBarController()
         TabBarViewController.viewControllers = [HomeVC,BrowseVC]
+        TabBarViewController.selectedViewController = HomeVC
         
     }
     
