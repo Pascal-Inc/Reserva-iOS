@@ -34,37 +34,32 @@
                             <userLayoutGuide location="654" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-VA-oCM">
-                                <rect key="frame" x="30" y="787" width="354" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-VA-oCM">
+                                <rect key="frame" x="30" y="809" width="354" height="38"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
                                     <segue destination="hHv-0i-gEo" kind="show" identifier="getStarted" id="8Ze-Yz-Ok7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
-                                <rect key="frame" x="30" y="516" width="330" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
+                                <rect key="frame" x="30" y="516" width="354" height="39"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="m1a-6L-3ex">
-                                <rect key="frame" x="45" y="150" width="324" height="298"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="m1a-6L-3ex">
+                                <rect key="frame" x="45" y="144" width="324" height="1280"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-yr-4Qa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-yr-4Qa">
                                 <rect key="frame" x="30" y="595" width="354" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Reserva is an app that will revolutionise and enhance your booking experience at events, rooms and many more, right at your fingertips</string>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqO-hd-XAL">
-                                <rect key="frame" x="30" y="836" width="354" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqO-hd-XAL">
+                                <rect key="frame" x="30" y="847" width="354" height="38"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
@@ -73,6 +68,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GNB-yr-4Qa" secondAttribute="trailing" constant="30" id="1uS-Pk-NWd"/>
+                            <constraint firstAttribute="bottom" secondItem="QqO-hd-XAL" secondAttribute="bottom" constant="11" id="77c-85-Ubu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QqO-hd-XAL" secondAttribute="trailing" constant="30" id="BoA-Ze-eKH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m1a-6L-3ex" secondAttribute="trailing" constant="45" id="E5U-ik-FQp"/>
+                            <constraint firstItem="kSw-0F-BKf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="EVG-0N-I8g"/>
+                            <constraint firstItem="GNB-yr-4Qa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Mmv-Cn-McT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kSw-0F-BKf" secondAttribute="trailing" constant="30" id="VOa-On-J2i"/>
+                            <constraint firstItem="kRo-VA-oCM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Zoa-8x-eQ2"/>
+                            <constraint firstItem="GNB-yr-4Qa" firstAttribute="top" secondItem="kSw-0F-BKf" secondAttribute="bottom" constant="40" id="Zqs-0S-2HE"/>
+                            <constraint firstItem="m1a-6L-3ex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="jB4-E7-LKt"/>
+                            <constraint firstItem="QqO-hd-XAL" firstAttribute="top" secondItem="kRo-VA-oCM" secondAttribute="bottom" id="jBr-20-2D9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kRo-VA-oCM" secondAttribute="trailing" constant="30" id="qFZ-OQ-obz"/>
+                            <constraint firstItem="m1a-6L-3ex" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="syK-gD-jLJ"/>
+                            <constraint firstItem="QqO-hd-XAL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zat-Cy-hLN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="095-oX-jDa"/>
@@ -529,32 +540,42 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Use My Location"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Your City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87O-Kp-3ys">
-                                <rect key="frame" x="30" y="516" width="223" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Find Your City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87O-Kp-3ys">
+                                <rect key="frame" x="30" y="516" width="354" height="39"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-yv-2hk">
-                                <rect key="frame" x="45" y="150" width="324" height="298"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-yv-2hk">
+                                <rect key="frame" x="45" y="144" width="324" height="1280"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reserva needs your Location in order to deliver the best experience" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-bB-AWd">
-                                <rect key="frame" x="30" y="595" width="294" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reserva needs your Location in order to deliver the best experience" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-bB-AWd">
+                                <rect key="frame" x="30" y="595" width="354" height="79"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwI-aK-cX0">
-                                <rect key="frame" x="30" y="836" width="354" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwI-aK-cX0">
+                                <rect key="frame" x="30" y="847" width="354" height="38"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Choose City"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="87O-Kp-3ys" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="0Af-9Q-Ocl"/>
+                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="FWv-bB-AWd" secondAttribute="trailing" constant="30" id="0dQ-mp-gZi"/>
+                            <constraint firstItem="FWv-bB-AWd" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="9iE-aO-oYI"/>
+                            <constraint firstItem="87O-Kp-3ys" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="J6c-47-lBv"/>
+                            <constraint firstItem="bHa-yv-2hk" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="45" id="KPS-KG-Caz"/>
+                            <constraint firstItem="VwI-aK-cX0" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="KdK-Op-nQJ"/>
+                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="bHa-yv-2hk" secondAttribute="trailing" constant="45" id="Qev-vS-NRV"/>
+                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="VwI-aK-cX0" secondAttribute="trailing" constant="30" id="b4h-Lx-svt"/>
+                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="87O-Kp-3ys" secondAttribute="trailing" constant="30" id="ezx-sw-BX8"/>
+                            <constraint firstItem="FWv-bB-AWd" firstAttribute="top" secondItem="87O-Kp-3ys" secondAttribute="bottom" constant="40" id="iDg-7s-O4I"/>
+                            <constraint firstAttribute="bottom" secondItem="VwI-aK-cX0" secondAttribute="bottom" constant="11" id="k02-RH-baE"/>
+                            <constraint firstItem="bHa-yv-2hk" firstAttribute="top" secondItem="XEx-De-QFO" secondAttribute="top" constant="100" id="or4-GW-8F3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XEx-De-QFO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="yx5-ba-3w8"/>
@@ -726,7 +747,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Qjp-AS-pIW"/>
         <segue reference="FF6-kU-e37"/>
-        <segue reference="sxn-Nb-6o8"/>
+        <segue reference="4Ou-ch-tKc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
