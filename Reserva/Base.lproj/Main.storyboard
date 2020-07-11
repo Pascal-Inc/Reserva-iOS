@@ -217,6 +217,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="BS2-0X-h1L">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3f2-LY-dSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="DUT-ji-2LA" customClass="TabBarViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fFc-OE-8F9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y0i-Pb-GGL">
@@ -225,9 +226,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3f2-LY-dSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3655.0724637681164" y="1338.6160714285713"/>
+            <point key="canvasLocation" x="3461" y="1414"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Pxr-4S-N28">
