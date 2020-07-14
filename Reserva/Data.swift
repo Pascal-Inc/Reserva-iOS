@@ -65,6 +65,7 @@ struct Event {
 }
 
 
+
    /* func buttonstyle1() {
         layer.cornerRadius = CGFloat(cornerRadius1)
         backgroundColor = color1
