@@ -8,12 +8,36 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        arrayName.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
 
+        // Configure the cell...
+        if let cell = cell as? HomeTableViewCell {
+            let homeStuff = arrayName[indexPath.row]
+            cell.homeCellImage.image = UIImage(named: homeStuff.eventimage)
+            cell.homeCellEventName.text = homeStuff.eventname
+            cell.homeCellEventType.text = homeStuff.eventtype
+            cell.homeCellEventDate.text = homeStuff.eventdate
+        }
+
+        return cell
+    }
+    
+    
+    @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet weak var browseButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        browseButton.layer.cornerRadius = 5
     }
     
 
