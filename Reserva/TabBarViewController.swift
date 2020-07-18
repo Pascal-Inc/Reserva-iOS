@@ -10,7 +10,7 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-    func initialiseTabBar() {
+    /*func initialiseTabBar() {
         let homeTab = UITabBarItem()
         homeTab.title = "Home"
         homeTab.image = UIImage(named: "")
@@ -30,12 +30,13 @@ class TabBarViewController: UITabBarController {
         let TabBarViewController = UITabBarController()
         TabBarViewController.viewControllers = [HomeVC,BrowseVC]
         TabBarViewController.selectedViewController = HomeVC
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialiseTabBar()
-        tabBarController?.selectedIndex = 4
+        // initialiseTabBar()
+        self.selectedIndex = 3
+        navigationItem.setHidesBackButton(true, animated: false)
     }
     
 
