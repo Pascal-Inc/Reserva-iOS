@@ -11,7 +11,6 @@ import UIKit
 class TabBarViewController: UITabBarController {
     
     func initialiseTabBar() {
-        
         let homeTab = UITabBarItem()
         homeTab.title = "Home"
         homeTab.image = UIImage(named: "")
@@ -31,16 +30,12 @@ class TabBarViewController: UITabBarController {
         let TabBarViewController = UITabBarController()
         TabBarViewController.viewControllers = [HomeVC,BrowseVC]
         TabBarViewController.selectedViewController = HomeVC
-        
-        
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        return initialiseTabBar()
-        
-        
+        initialiseTabBar()
+        tabBarController?.selectedIndex = 4
     }
     
 
