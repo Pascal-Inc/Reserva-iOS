@@ -25,7 +25,7 @@ var color3 = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
 var cornerRadius1 = 5
 
 
-class ButtomCustomStyle1: UIButton {
+class ButtonCustomStyle1: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -40,7 +40,7 @@ class ButtomCustomStyle1: UIButton {
         
     }
         
-    }
+}
 
 
    /* func buttonstyle1() {
@@ -48,4 +48,5 @@ class ButtomCustomStyle1: UIButton {
         backgroundColor = color1
         setTitleColor(color3, for: .normal)
     }
- /**/*/
+ */
+
