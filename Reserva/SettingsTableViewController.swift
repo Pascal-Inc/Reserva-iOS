@@ -13,7 +13,7 @@ class SettingsTableViewController: UITableViewController {
     var row1 = ["Account Details"]
     var row1Detail = ["Name, Email, Phone Number"]
     var row2 = ["Location"]
-    var row2Detail = ["City Name: \(userLongitude!), \(userLatitude!)"]
+    var row2Detail = ["City Name: \(userLongitude ?? 0.0), \(userLatitude ?? 0.0)"]
     var row3 = ["Privacy"]
     var row3Detail = ["Terms of Service, Privacy Policy"]
     var row4 = ["Notifications"]

@@ -92,8 +92,6 @@
 		89DA116624AF6C0400496F3C /* Reserva */ = {
 			isa = PBXGroup;
 			children = (
-				89DA116724AF6C0400496F3C /* AppDelegate.swift */,
-				89DA116924AF6C0400496F3C /* SceneDelegate.swift */,
 				89DA116B24AF6C0400496F3C /* WelcomeViewController.swift */,
 				B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */,
 				89DA117B24AF713400496F3C /* SignInViewController.swift */,
@@ -108,15 +106,17 @@
 				89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */,
 				899D7B0724B2246F00D473F8 /* EventInfoViewController.swift */,
 				899D7B0924B2248D00D473F8 /* EventRatingsViewController.swift */,
-				B41BA09924B352DC00054B46 /* Data.swift */,
 				B4CAE48424B959F400FFC703 /* BrowseViewController.swift */,
 				B4CAE48224B9589700FFC703 /* HomeViewController.swift */,
+				A805FAAD24C1B3CA009EC353 /* HomeTableViewCell.swift */,
+				B41BA09924B352DC00054B46 /* Data.swift */,
+				89DA116724AF6C0400496F3C /* AppDelegate.swift */,
+				89DA116924AF6C0400496F3C /* SceneDelegate.swift */,
 				89DA117024AF6C0900496F3C /* Assets.xcassets */,
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
+				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
 				B40D634824B49D30008A3D29 /* GoogleService-Info.plist */,
-				89DA116D24AF6C0400496F3C /* Main.storyboard */,
-				A805FAAD24C1B3CA009EC353 /* HomeTableViewCell.swift */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";

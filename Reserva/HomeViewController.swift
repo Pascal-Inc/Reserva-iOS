@@ -31,13 +31,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet weak var homeTableView: UITableView!
-    @IBOutlet weak var browseButton: UIButton!
+    // @IBOutlet weak var browseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        browseButton.layer.cornerRadius = 5
+        // browseButton.layer.cornerRadius = 5
     }
     
 
