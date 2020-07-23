@@ -12,9 +12,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var EventSelection: UISegmentedControl!
     
-    func SegmentedControl() {
+    func UISetup() {
+        EventSelection.selectedSegmentTintColor = color1
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3], for: .selected)
         
     }
+    
+    let items = ["Booked Events","My Events"]
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         arrayName.count
     }
@@ -40,11 +47,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        return SegmentedControl()
 
-        // Do any additional setup after loading the view.
-        // browseButton.layer.cornerRadius = 5
+        return UISetup()
     }
     
 
