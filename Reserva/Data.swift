@@ -16,6 +16,8 @@ struct homeEvents{
     var eventimage: String
 }
 
+
+
 var arrayName = [homeEvents(eventname: "dummyData", eventtype: "dummyData", eventdate: "dummyData", eventimage: "placeholder_image")]
 
 var color1 = UIColor(red: 114/255, green: 147/255, blue: 255/255, alpha: 1.0)
