@@ -23,7 +23,7 @@ class WelcomeViewController: UIViewController {
         subtitleLabel.textColor = color2
         getStartedButton = ButtonCustomStyle1()
         signInButton.setTitleColor(color1, for: .normal)
-        //print("xd")
+        
     }
     
     override func viewDidLoad() {
