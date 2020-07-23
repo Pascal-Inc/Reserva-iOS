@@ -48,12 +48,12 @@ var eventDisplayType = "booked events"
     
     
     @IBOutlet weak var homeTableView: UITableView!
-    // @IBOutlet weak var browseButton: UIButton!
+    @IBOutlet weak var browseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        return UISetup()
+        UISetup()
+        browseButton.layer.cornerRadius = 10
     }
     
 

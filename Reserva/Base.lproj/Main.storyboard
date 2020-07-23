@@ -328,6 +328,7 @@
                     </view>
                     <connections>
                         <outlet property="EventSelection" destination="62c-Nt-AJJ" id="0L8-d9-kAx"/>
+                        <outlet property="browseButton" destination="06T-Ed-bLK" id="hGh-sG-cOT"/>
                         <outlet property="homeTableView" destination="iPW-CD-PzF" id="dkm-LA-iX1"/>
                     </connections>
                 </viewController>
