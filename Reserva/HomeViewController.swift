@@ -10,6 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var EventSelection: UISegmentedControl!
+    
+    func SegmentedControl() {
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         arrayName.count
     }
@@ -35,6 +40,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        return SegmentedControl()
 
         // Do any additional setup after loading the view.
         // browseButton.layer.cornerRadius = 5
