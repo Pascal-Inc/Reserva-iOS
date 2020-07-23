@@ -12,6 +12,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var EventSelection: UISegmentedControl!
     
+var eventDisplayType = "booked events"
+    
+    @IBAction func eventTypeSelected(_ sender: Any) {
+    }
+    
     func UISetup() {
         EventSelection.selectedSegmentTintColor = color1
         EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3], for: .selected)
@@ -19,7 +24,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    let items = ["Booked Events","My Events"]
     
     
     
