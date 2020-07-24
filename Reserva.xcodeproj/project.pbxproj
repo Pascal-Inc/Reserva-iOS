@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		89445C8624B471D3006E956D /* ExtraSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */; };
+		896FF40424CB06C500ECEAC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */; };
 		897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */; };
 		897E2B5324B1C84C000903A8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5224B1C84C000903A8 /* TabBarViewController.swift */; };
 		899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */; };
@@ -25,8 +26,8 @@
 		89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */; };
 		89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117B24AF713400496F3C /* SignInViewController.swift */; };
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
+		A5FBD34FD07D00DA6CC2B1D9 /* Pods_Reserva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6FA75B782B0989048200E8 /* Pods_Reserva.framework */; };
 		A805FAAE24C1B3CA009EC353 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A805FAAD24C1B3CA009EC353 /* HomeTableViewCell.swift */; };
-		B40D634924B49D30008A3D29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B40D634824B49D30008A3D29 /* GoogleService-Info.plist */; };
 		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 		B4CAE48324B9589700FFC703 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE48224B9589700FFC703 /* HomeViewController.swift */; };
@@ -34,7 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C6FA75B782B0989048200E8 /* Pods_Reserva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reserva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB98210FCB879597D6DD3CD /* Pods-Reserva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reserva.release.xcconfig"; path = "Target Support Files/Pods-Reserva/Pods-Reserva.release.xcconfig"; sourceTree = "<group>"; };
+		6F8B0D4838251A9A71EA28F1 /* Pods-Reserva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reserva.debug.xcconfig"; path = "Target Support Files/Pods-Reserva/Pods-Reserva.debug.xcconfig"; sourceTree = "<group>"; };
 		89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSettingsTableViewController.swift; sourceTree = "<group>"; };
+		896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
 		897E2B5224B1C84C000903A8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +60,6 @@
 		89DA117B24AF713400496F3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A805FAAD24C1B3CA009EC353 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		B40D634824B49D30008A3D29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B4CAE48224B9589700FFC703 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -67,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FBD34FD07D00DA6CC2B1D9 /* Pods_Reserva.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40F65CA6527AD332CA3E8676 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F8B0D4838251A9A71EA28F1 /* Pods-Reserva.debug.xcconfig */,
+				4BB98210FCB879597D6DD3CD /* Pods-Reserva.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		89DA115B24AF6C0400496F3C = {
 			isa = PBXGroup;
 			children = (
 				89DA116624AF6C0400496F3C /* Reserva */,
 				89DA116524AF6C0400496F3C /* Products */,
+				40F65CA6527AD332CA3E8676 /* Pods */,
+				DA706B367DC2AC96FB072A35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,9 +132,17 @@
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
 				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
-				B40D634824B49D30008A3D29 /* GoogleService-Info.plist */,
+				896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */,
 			);
 			path = Reserva;
+			sourceTree = "<group>";
+		};
+		DA706B367DC2AC96FB072A35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C6FA75B782B0989048200E8 /* Pods_Reserva.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89DA117824AF6C0900496F3C /* Build configuration list for PBXNativeTarget "Reserva" */;
 			buildPhases = (
+				0C3190C4F4CE98F426D48D84 /* [CP] Check Pods Manifest.lock */,
 				89DA116024AF6C0400496F3C /* Sources */,
 				89DA116124AF6C0400496F3C /* Frameworks */,
 				89DA116224AF6C0400496F3C /* Resources */,
+				2E46F0FE420758DEEB2EC6A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,13 +206,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */,
-				B40D634924B49D30008A3D29 /* GoogleService-Info.plist in Resources */,
+				896FF40424CB06C500ECEAC7 /* GoogleService-Info.plist in Resources */,
 				89DA117124AF6C0900496F3C /* Assets.xcassets in Resources */,
 				89DA116F24AF6C0400496F3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C3190C4F4CE98F426D48D84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reserva-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E46F0FE420758DEEB2EC6A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reserva/Pods-Reserva-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reserva/Pods-Reserva-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reserva/Pods-Reserva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89DA116024AF6C0400496F3C /* Sources */ = {
@@ -354,6 +422,7 @@
 		};
 		89DA117924AF6C0900496F3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8B0D4838251A9A71EA28F1 /* Pods-Reserva.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +444,7 @@
 		};
 		89DA117A24AF6C0900496F3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB98210FCB879597D6DD3CD /* Pods-Reserva.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
