@@ -10,20 +10,60 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        arrayName.count
+    @IBOutlet var EventSelection: UISegmentedControl!
+    
+var eventDisplayType = "booked events"
+    
+    /*@IBAction func eventTypeSelected(_ sender: Any) {
+    }*/
+    
+    func UISetup() {
+        EventSelection.selectedSegmentTintColor = color1!
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3!], for: .selected)
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1!], for: .normal)
+        
     }
     
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if EventSelection.selectedSegmentIndex == 0 {
+            return arrayName.count
+        }
+        return arrayName.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if EventSelection.selectedSegmentIndex == 0 {
+            return 113
+        }
+        return 20
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
 
         // Configure the cell...
-        if let cell = cell as? HomeTableViewCell {
-            let homeStuff = arrayName[indexPath.row]
-            cell.homeCellImage.image = UIImage(named: homeStuff.eventimage)
-            cell.homeCellEventName.text = homeStuff.eventname
-            cell.homeCellEventType.text = homeStuff.eventtype
-            cell.homeCellEventDate.text = homeStuff.eventdate
+        if EventSelection.selectedSegmentIndex == 0 {
+            if let cell = cell as? HomeTableViewCell {
+                let homeStuff = arrayName[indexPath.row]
+                cell.homeCellImage.image = UIImage(named: homeStuff.eventimage)
+                cell.homeCellEventName.text = homeStuff.eventname
+                cell.homeCellEventType.text = homeStuff.eventtype
+                cell.homeCellEventDate.text = homeStuff.eventdate
+            }
+        } else {
+            // if let cell = cell as? /* SomeTableViewCell*/ {
+                /*
+                let someStuff = arrayName[indexPath.row]
+                cell.someCellImage.image = UIImage(named: someStuff.eventimage)
+                cell.homeCellEventName.text = someStuff.eventname
+                cell.homeCellEventType.text = someStuff.eventtype
+                cell.homeCellEventDate.text = someStuff.eventdate
+                
+            }*/
         }
 
         return cell
@@ -31,13 +71,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet weak var homeTableView: UITableView!
-    // @IBOutlet weak var browseButton: UIButton!
+    @IBOutlet weak var browseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        // browseButton.layer.cornerRadius = 5
+        UISetup()
+        browseButton.layer.cornerRadius = 10
     }
     
 
