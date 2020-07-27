@@ -194,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3V6-OC-Dd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5413.04347826087" y="630.80357142857144"/>
+            <point key="canvasLocation" x="5387" y="1153"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="U7u-Nc-H4o">
@@ -223,7 +223,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBn-8A-PDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4675" y="40"/>
+            <point key="canvasLocation" x="4557" y="674"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="BS2-0X-h1L">
@@ -236,8 +236,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="HEU-yT-uqE" kind="relationship" relationship="viewControllers" id="5RA-jN-Whw"/>
-                        <segue destination="ivH-Qc-2j5" kind="relationship" relationship="viewControllers" id="D3o-TN-X90"/>
+                        <segue destination="h6n-5h-qpq" kind="relationship" relationship="viewControllers" id="s6p-IU-V7D"/>
+                        <segue destination="3HB-9S-VCI" kind="relationship" relationship="viewControllers" id="TPe-y7-8ei"/>
+                        <segue destination="HEU-yT-uqE" kind="relationship" relationship="viewControllers" id="D49-di-aGL"/>
+                        <segue destination="PP8-uA-zLi" kind="relationship" relationship="viewControllers" id="hsX-f0-F1R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3f2-LY-dSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
