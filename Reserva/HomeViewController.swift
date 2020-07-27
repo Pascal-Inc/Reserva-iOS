@@ -18,9 +18,9 @@ var eventDisplayType = "booked events"
     }*/
     
     func UISetup() {
-        EventSelection.selectedSegmentTintColor = color1
-        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3], for: .selected)
-        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1], for: .normal)
+        EventSelection.selectedSegmentTintColor = color1!
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3!], for: .selected)
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1!], for: .normal)
         
     }
     
