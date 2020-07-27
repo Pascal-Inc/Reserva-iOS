@@ -246,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="3526" y="1562"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Item-->
         <scene sceneID="Pxr-4S-N28">
             <objects>
-                <viewController title="Home View Controller" id="ivH-Qc-2j5" customClass="HomeViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ivH-Qc-2j5" customClass="HomeViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zkr-Vq-Jzo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mv5-Nf-VoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4556.521739130435" y="2070.5357142857142"/>
+            <point key="canvasLocation" x="4019" y="2259"/>
         </scene>
         <!--Account-->
         <scene sceneID="zAf-7h-OsI">

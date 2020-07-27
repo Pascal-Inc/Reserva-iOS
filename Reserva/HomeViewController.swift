@@ -17,13 +17,6 @@ var eventDisplayType = "booked events"
     /*@IBAction func eventTypeSelected(_ sender: Any) {
     }*/
     
-    func UISetup() {
-        EventSelection.selectedSegmentTintColor = color1!
-        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3!], for: .selected)
-        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1!], for: .normal)
-        
-    }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -75,7 +68,9 @@ var eventDisplayType = "booked events"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UISetup()
+        EventSelection.selectedSegmentTintColor = color1
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3!], for: .selected)
+        EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1!], for: .normal)
         browseButton.layer.cornerRadius = 10
     }
     

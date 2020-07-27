@@ -10,31 +10,31 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-    func initialiseTabBar() {
-        let homeTab = UITabBarItem()
-        homeTab.title = "Home"
-        //homeTab.image = UIImage(named: "")
-        //homeTab.selectedImage = UIImage(named: "")
-        
-        let browseTab  = UITabBarItem()
-        browseTab.title = "Browse"
-        //browseTab.image = UIImage(named: "")
-        //homeTab.selectedImage = UIImage(named: "")
-        
-        let HomeVC = HomeViewController()
-        HomeVC.tabBarItem = homeTab
-        
-        let BrowseVC = BrowseViewController()
-        BrowseVC.tabBarItem = browseTab
-        
-        let TabBarViewController = UITabBarController()
-        TabBarViewController.viewControllers = [HomeVC,BrowseVC]
-        TabBarViewController.selectedViewController = HomeVC
-    }
+//    func initialiseTabBar() {
+//        let homeTab = UITabBarItem()
+//        homeTab.title = "Home"
+//        //homeTab.image = UIImage(named: "")
+//        //homeTab.selectedImage = UIImage(named: "")
+//
+//        let browseTab  = UITabBarItem()
+//        browseTab.title = "Browse"
+//        //browseTab.image = UIImage(named: "")
+//        //homeTab.selectedImage = UIImage(named: "")
+//
+//        let HomeVC = HomeViewController()
+//        HomeVC.tabBarItem = homeTab
+//
+//        let BrowseVC = BrowseViewController()
+//        BrowseVC.tabBarItem = browseTab
+//
+//        let TabBarViewController = UITabBarController()
+//        TabBarViewController.viewControllers = [HomeVC,BrowseVC]
+//        TabBarViewController.selectedViewController = HomeVC
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialiseTabBar()
+        // initialiseTabBar()
         self.selectedIndex = 2
         navigationItem.setHidesBackButton(true, animated: false)
     }
