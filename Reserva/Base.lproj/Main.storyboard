@@ -307,6 +307,9 @@
                                     <segment title="Booked Events"/>
                                     <segment title="My Events"/>
                                 </segments>
+                                <connections>
+                                    <action selector="eventTypeSelected:" destination="ivH-Qc-2j5" eventType="valueChanged" id="F3p-nl-9PB"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
