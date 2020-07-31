@@ -112,6 +112,7 @@
 				899D7AFF24B223DE00D473F8 /* UpcomingEventsViewController.swift */,
 				899D7B0124B2244500D473F8 /* EventsTableViewController.swift */,
 				899D7B0324B2245700D473F8 /* SearchTableViewController.swift */,
+				A87AB3B124D059CB007D3E2E /* SearchTableViewCell.swift */,
 				899D7B0524B2246300D473F8 /* SettingsTableViewController.swift */,
 				89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */,
 				899D7B0724B2246F00D473F8 /* EventInfoViewController.swift */,
@@ -127,7 +128,6 @@
 				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
 				896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */,
-				A87AB3B124D059CB007D3E2E /* SearchTableViewCell.swift */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
