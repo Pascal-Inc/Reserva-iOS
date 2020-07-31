@@ -12,7 +12,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var EventSelection: UISegmentedControl!
     
-var eventDisplayType = "booked events"
+    var eventDisplayType = "Booked events"
     
     /*@IBAction func eventTypeSelected(_ sender: Any) {
     }*/
