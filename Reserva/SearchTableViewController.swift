@@ -10,6 +10,7 @@ import UIKit
 
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var searchImageView: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredData: [Event]!
     var events = [

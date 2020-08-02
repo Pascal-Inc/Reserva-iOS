@@ -734,7 +734,7 @@
                                     <outlet property="searchEventDescription" destination="VS3-ds-qFU" id="CR6-QY-Amt"/>
                                     <outlet property="searchEventName" destination="3A1-nU-iTN" id="d9R-xi-4c3"/>
                                     <outlet property="searchEventType" destination="VGv-DF-MXg" id="HoV-pS-xVN"/>
-                                    <outlet property="searchImageView" destination="kcb-eJ-jQ5" id="WBl-MA-PaZ"/>
+                                    <outlet property="searchImageView" destination="kcb-eJ-jQ5" id="68d-qA-zFz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -745,8 +745,8 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Ml6-SU-MAN"/>
                     <connections>
-                        <outlet property="SearchCell" destination="kmG-O8-7ed" id="9SW-kn-YA9"/>
                         <outlet property="searchBar" destination="obs-HC-hfX" id="yAJ-2S-B0b"/>
+                        <outlet property="searchImageView" destination="kcb-eJ-jQ5" id="GpP-mk-H7p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scQ-IS-xUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
