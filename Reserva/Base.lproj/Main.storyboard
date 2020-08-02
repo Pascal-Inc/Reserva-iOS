@@ -294,10 +294,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="homeCellEventDate" destination="fJ3-Dp-iip" id="Ynu-Gy-FG8"/>
-                                            <outlet property="homeCellEventName" destination="lA6-Jv-352" id="61t-e2-CLA"/>
-                                            <outlet property="homeCellEventType" destination="QNG-e8-YFn" id="Goi-KH-G2n"/>
-                                            <outlet property="homeCellImage" destination="x6O-nc-Qan" id="MBz-Os-p0z"/>
+                                            <outlet property="homeEventDate" destination="fJ3-Dp-iip" id="2wY-Ig-bpj"/>
+                                            <outlet property="homeEventName" destination="lA6-Jv-352" id="Gt4-d4-OpM"/>
+                                            <outlet property="homeEventType" destination="QNG-e8-YFn" id="WZH-Tc-WKv"/>
+                                            <outlet property="homeImageView" destination="x6O-nc-Qan" id="0Nz-o1-JxY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -746,7 +746,6 @@
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Ml6-SU-MAN"/>
                     <connections>
                         <outlet property="searchBar" destination="obs-HC-hfX" id="yAJ-2S-B0b"/>
-                        <outlet property="searchImageView" destination="kcb-eJ-jQ5" id="GpP-mk-H7p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scQ-IS-xUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -840,7 +839,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Qjp-AS-pIW"/>
-        <segue reference="FF6-kU-e37"/>
+        <segue reference="IOG-2e-GWc"/>
         <segue reference="4Ou-ch-tKc"/>
     </inferredMetricsTieBreakers>
     <resources>

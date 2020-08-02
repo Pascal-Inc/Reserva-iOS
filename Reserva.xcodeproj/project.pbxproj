@@ -27,6 +27,8 @@
 		89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */; };
 		89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117B24AF713400496F3C /* SignInViewController.swift */; };
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
+		A843499024D6D5D900EFAA32 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */; };
+		A843499224D6D5E000EFAA32 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */; };
 		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 		B4CAE48324B9589700FFC703 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE48224B9589700FFC703 /* HomeViewController.swift */; };
@@ -58,6 +60,8 @@
 		89DA117524AF6C0900496F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89DA117B24AF713400496F3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B4CAE48224B9589700FFC703 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
 				896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */,
+				A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */,
+				A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				899D7B0A24B2248D00D473F8 /* EventRatingsViewController.swift in Sources */,
 				89DA117C24AF713400496F3C /* SignInViewController.swift in Sources */,
 				B4CAE48324B9589700FFC703 /* HomeViewController.swift in Sources */,
+				A843499224D6D5E000EFAA32 /* SearchTableViewCell.swift in Sources */,
+				A843499024D6D5D900EFAA32 /* HomeTableViewCell.swift in Sources */,
 				89DA116C24AF6C0400496F3C /* WelcomeViewController.swift in Sources */,
 				89DA116824AF6C0400496F3C /* AppDelegate.swift in Sources */,
 				89DA116A24AF6C0400496F3C /* SceneDelegate.swift in Sources */,

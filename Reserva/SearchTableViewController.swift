@@ -45,10 +45,21 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventsCell", for: indexPath)
-
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
+        
         // Configure the cell...
-        cell.textLabel?.text = filteredData[indexPath.row].eventName
+        
+        if let cell = cell as? SearchTableViewCell {
+            
+            let searchStuff = events[indexPath.row]
+            
+            cell.searchImageView.image = UIImage(named: searchStuff.eventImage)
+            cell.searchEventName.text = searchStuff.eventName
+            cell.searchEventDate.text = "\(String(describing: searchStuff.eventStartDate)) - \(String(describing: searchStuff.eventEndDate))"
+            cell.searchEventType.text = searchStuff.eventCategory
+            
+        }
 
         return cell
     }

@@ -42,10 +42,10 @@ var eventDisplayType = "booked events"
         if EventSelection.selectedSegmentIndex == 0 {
             if let cell = cell as? HomeTableViewCell {
                 let homeStuff = arrayName[indexPath.row]
-                cell.homeCellImage.image = UIImage(named: homeStuff.eventimage)
-                cell.homeCellEventName.text = homeStuff.eventname
-                cell.homeCellEventType.text = homeStuff.eventtype
-                cell.homeCellEventDate.text = homeStuff.eventdate
+                cell.homeImageView.image = UIImage(named: homeStuff.eventimage)
+                cell.homeEventName.text = homeStuff.eventname
+                cell.homeEventType.text = homeStuff.eventtype
+                cell.homeEventDate.text = homeStuff.eventdate
             }
         } else {
             // if let cell = cell as? /* SomeTableViewCell*/ {
