@@ -7,7 +7,7 @@
 //
 
 import UIKit
-chikin micbigits  asd
+
 class SignInViewController: UIViewController {
 
     let defaults = UserDefaults.standard
