@@ -10,9 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet var EventSelection: UISegmentedControl!
     
-var eventDisplayType = "booked events"
+    var eventDisplayType = "Booked events"
     
     /*@IBAction func eventTypeSelected(_ sender: Any) {
     }*/
@@ -31,13 +32,12 @@ var eventDisplayType = "booked events"
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if EventSelection.selectedSegmentIndex == 0 {
-            return 113
+            return 120
         }
         return 20
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
-
         // Configure the cell...
         if EventSelection.selectedSegmentIndex == 0 {
             if let cell = cell as? HomeTableViewCell {
@@ -47,6 +47,9 @@ var eventDisplayType = "booked events"
                 cell.homeEventType.text = homeStuff.eventtype
                 cell.homeEventDate.text = homeStuff.eventdate
             }
+        }
+        /*if EventSelection.selectedSegmentIndex == 0 {
+            
         } else {
             // if let cell = cell as? /* SomeTableViewCell*/ {
                 /*
@@ -57,20 +60,22 @@ var eventDisplayType = "booked events"
                 cell.homeCellEventDate.text = someStuff.eventdate
                 
             }*/
-        }
+        }*/
 
         return cell
     }
     
     
     @IBOutlet weak var homeTableView: UITableView!
-    @IBOutlet weak var browseButton: UIButton!
+    // @IBOutlet weak var browseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         EventSelection.selectedSegmentTintColor = color1
         EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color3!], for: .selected)
         EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1!], for: .normal)
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
 

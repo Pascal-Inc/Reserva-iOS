@@ -14,6 +14,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var homeEventName: UILabel!
     @IBOutlet weak var homeEventType: UILabel!
     @IBOutlet weak var homeEventDate: UILabel!
+    @IBOutlet weak var homeEventDesc: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
