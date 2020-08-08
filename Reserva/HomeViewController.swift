@@ -46,6 +46,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 cell.homeEventName.text = homeStuff.eventname
                 cell.homeEventType.text = homeStuff.eventtype
                 cell.homeEventDate.text = homeStuff.eventdate
+                cell.homeEventDesc.text = homeStuff.eventdesc
             }
         }
         /*if EventSelection.selectedSegmentIndex == 0 {

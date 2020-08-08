@@ -13,12 +13,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     @IBOutlet weak var searchImageView: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredData: [Event]!
-    var events = [
-        Event(eventImage: "placeholder_image", eventName: "Singapore Food Festival", rating: 4.6, userLiked: true, eventDescription: "Fuelled by our national obsession, the Singapore Food Festival boasts tasty dishes, cooking tips and unique dining experiences", eventStartDate: "10/7/20", eventEndDate: "26/7/20", eventCategory: "Food", eventFrequency: "Annually"),
-        Event(eventImage: "placeholder_image", eventName: "Grand Prix Singapore", rating: 3.9, userLiked: false, eventDescription: "A motor race which forms part of the FIA Formula One World Championship", eventStartDate: "11/7/20", eventEndDate: "20/7/20", eventCategory: "Races", eventCost: "$38", eventCostTimeLengthInDays: 1, eventFrequency: "Annually"),
-        Event(eventImage: "placeholder_image", eventName: "Singapore Art Week", rating: 4.2, userLiked: false, eventDescription: "An event to showcase a range of quality visual arts projects, discussions, and exhibitions to a local and international audience", eventStartDate: "15/9/20", eventEndDate: "22/9/20", eventCategory: "Art", eventFrequency: "Biannually"),
-        Event(eventImage: "placeholder_image", eventName: "Masks Sewn With Love", rating: 5.0, userLiked: true, eventDescription: "A community project to sew reusable cloth masks", eventCategory: "Charity and Causes", eventFrequency: "Weekly")
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,31 +117,48 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
             filteredData = events
         } else {
             for event in events {
+                var shouldAppendEvent = false
                 if event.eventCategory.lowercased().contains(searchText.lowercased()) {
-                    filteredData.append(event)
-                } else if event.eventName.lowercased().contains(searchText.lowercased()) {
-                    filteredData.append(event)
-                } else if event.eventDescription.lowercased().contains(searchText.lowercased()){
-                    filteredData.append(event)
-                } else if event.eventFrequency.lowercased().contains(searchText.lowercased()) {
-                    filteredData.append(event)
-                } else if event.eventCost != nil {
+                    shouldAppendEvent = true
+                }
+                
+                if event.eventName.lowercased().contains(searchText.lowercased()) {
+                    shouldAppendEvent = true
+                }
+                
+                if event.eventDescription.lowercased().contains(searchText.lowercased()){
+                    shouldAppendEvent = true
+                }
+                
+                if event.eventFrequency.lowercased().contains(searchText.lowercased()) {
+                    shouldAppendEvent = true
+                }
+                
+                if event.eventCost != nil {
                     if event.eventCost!.lowercased().contains(searchText.lowercased()) {
-                        filteredData.append(event)
+                        shouldAppendEvent = true
                     }
-                } else if event.eventStartDate != nil {
+                }
+                if event.eventStartDate != nil {
                     if event.eventStartDate!.lowercased().contains(searchText.lowercased()) {
-                        filteredData.append(event)
-                        print("yes")
+                        shouldAppendEvent = true
                     }
-                } else if event.eventEndDate != nil {
+                }
+                
+                if event.eventEndDate != nil {
                     if event.eventEndDate!.lowercased().contains(searchText.lowercased()) {
-                        filteredData.append(event)
+                        shouldAppendEvent = true
                     }
-                } else if event.eventCostTimeLengthInDays != nil {
+                }
+                
+                if event.eventCostTimeLengthInDays != nil {
                     if searchText.lowercased().contains("\(event.eventCostTimeLengthInDays!)") {
-                        filteredData.append(event)
+                        shouldAppendEvent = true
                     }
+                }
+                
+                if shouldAppendEvent == true {
+                    filteredData.append(event)
                 }
             }
         }

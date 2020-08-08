@@ -15,11 +15,12 @@ struct homeEvents{
     var eventtype: String
     var eventdate: String
     var eventimage: String
+    var eventdesc: String
 }
 
 
 
-var arrayName = [homeEvents(eventname: "dummyData", eventtype: "dummyData", eventdate: "dummyData", eventimage: "placeholder_image")]
+var arrayName = [homeEvents(eventname: "dummyData", eventtype: "dummyData", eventdate: "dummyData", eventimage: "placeholder_image", eventdesc: "dummyData")]
 
 var color1: UIColor? = UIColor(red: 114/255, green: 147/255, blue: 255/255, alpha: 1.0)
 var color2: UIColor? = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1.0)
@@ -66,6 +67,13 @@ struct Event {
     var eventCostTimeLengthInDays: Int? // e.g. 1 Night or 5 Day, Optional as some may be foc, making text a string: "Free Admission", or some may be per entry which does not include time period
     var eventFrequency: String // e.g. Weekly
 }
+
+var events = [
+    Event(eventImage: "placeholder_image", eventName: "Singapore Food Festival", rating: 4.6, userLiked: true, eventDescription: "Fuelled by our national obsession, the Singapore Food Festival boasts tasty dishes, cooking tips and unique dining experiences", eventStartDate: "10/7/20", eventEndDate: "26/7/20", eventCategory: "Food", eventFrequency: "Annually"),
+    Event(eventImage: "placeholder_image", eventName: "Grand Prix Singapore", rating: 3.9, userLiked: false, eventDescription: "A motor race which forms part of the FIA Formula One World Championship", eventStartDate: "11/7/20", eventEndDate: "20/7/20", eventCategory: "Races", eventCost: "$38", eventCostTimeLengthInDays: 1, eventFrequency: "Annually"),
+    Event(eventImage: "placeholder_image", eventName: "Singapore Art Week", rating: 4.2, userLiked: false, eventDescription: "An event to showcase a range of quality visual arts projects, discussions, and exhibitions to a local and international audience", eventStartDate: "15/9/20", eventEndDate: "22/9/20", eventCategory: "Art", eventFrequency: "Biannually"),
+    Event(eventImage: "placeholder_image", eventName: "Masks Sewn With Love", rating: 5.0, userLiked: true, eventDescription: "A community project to sew reusable cloth masks", eventCategory: "Charity and Causes", eventFrequency: "Weekly")
+]
 
 
 
