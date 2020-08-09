@@ -10,7 +10,6 @@ import UIKit
 
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
-    @IBOutlet weak var searchImageView: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredData: [Event]!
     
@@ -100,15 +99,19 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
+        let dest = segue.destination as! SearchInDepthViewController
+        if segue.identifier == "searchInDepth" {
+            dest.stuff = filteredData[indexPath.row]
+        }
         // Pass the selected object to the new view controller.
     }
-    */
+
 
     // MARK: - Search Bar Configuration
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

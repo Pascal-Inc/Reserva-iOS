@@ -29,6 +29,7 @@
 		89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA117D24AF715000496F3C /* SignUpViewController.swift */; };
 		A843499024D6D5D900EFAA32 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */; };
 		A843499224D6D5E000EFAA32 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */; };
+		A8A85C6D24E0075300D4178A /* SearchInDepthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A85C6C24E0075300D4178A /* SearchInDepthViewController.swift */; };
 		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 		B4CAE48324B9589700FFC703 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE48224B9589700FFC703 /* HomeViewController.swift */; };
@@ -62,6 +63,7 @@
 		89DA117D24AF715000496F3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		A8A85C6C24E0075300D4178A /* SearchInDepthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInDepthViewController.swift; sourceTree = "<group>"; };
 		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B4CAE48224B9589700FFC703 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */,
 				A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */,
 				A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */,
+				A8A85C6C24E0075300D4178A /* SearchInDepthViewController.swift */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */,
+				A8A85C6D24E0075300D4178A /* SearchInDepthViewController.swift in Sources */,
 				897E2B5324B1C84C000903A8 /* TabBarViewController.swift in Sources */,
 				897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */,
 				899D7B0A24B2248D00D473F8 /* EventRatingsViewController.swift in Sources */,
