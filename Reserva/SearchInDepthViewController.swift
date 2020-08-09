@@ -32,21 +32,25 @@ class SearchInDepthViewController: UIViewController {
         followButton.layer.cornerRadius = 20
         wishlistButton.layer.cornerRadius = 20
         
-        inDepthImageView.image = UIImage(named: stuff!.eventImage)
-        inDepthEventName.text = stuff!.eventName
-        inDepthEventDescription.text = stuff!.eventDescription
-        inDepthAdmission.text = stuff!.eventCost
-        inDepthDateLabel.text = "\(String(describing: stuff!.eventStartDate)) - \(String(describing: stuff!.eventEndDate))"
+        inDepthImageView.image = UIImage(named: stuff?.eventImage ?? "")
+        inDepthEventName.text = stuff?.eventName
+        inDepthEventDescription.text = stuff?.eventDescription
+        inDepthAdmission.text = stuff?.eventCost
+        inDepthDateLabel.text = "\(stuff?.eventStartDate ?? "") - \(stuff?.eventEndDate ?? "")"
         inDepthReviewLabel.text = ""
         inDepthWebsiteLabel.text = ""
     }
     
     @IBAction func bookPressed(_ sender: Any) {
         let alert = UIAlertController(title: "You have booked for \(stuff!.eventName)", message: "Check your events for the events you signed up for!", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:
+            {action in
+            self.dismiss(animated: true, completion: nil)
+        }))
         self.present(alert, animated: true)
-        dismiss(animated: true, completion: nil)
         
     }
     

@@ -12,7 +12,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredData: [Event]!
-    var stuffToSend: Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +64,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        stuffToSend = filteredData?[indexPath.row]
+        self.performSegue(withIdentifier: "searchInDepth", sender: nil)
     }
 
     /*
@@ -111,7 +110,8 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         // Get the new view controller using segue.destination.
         if segue.identifier == "searchInDepth" {
             let dest = segue.destination as! SearchInDepthViewController
-            dest.stuff = stuffToSend
+            let indexPath = tableView.indexPathForSelectedRow
+            dest.stuff = filteredData[indexPath!.row]
         }
         // Pass the selected object to the new view controller.
     }
