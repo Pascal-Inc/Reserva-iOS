@@ -11,7 +11,7 @@ import UIKit
 
 class SearchInDepthViewController: UIViewController {
     
-    var stuff: Event!
+    var stuff: Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()

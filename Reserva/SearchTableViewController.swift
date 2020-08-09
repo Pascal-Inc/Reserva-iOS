@@ -12,6 +12,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredData: [Event]!
+    var stuffToSend: Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +64,9 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         return 120
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        stuffToSend = filteredData?[indexPath.row]
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -105,9 +109,9 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-        let dest = segue.destination as! SearchInDepthViewController
         if segue.identifier == "searchInDepth" {
-            dest.stuff = filteredData[indexPath.row]
+            let dest = segue.destination as! SearchInDepthViewController
+            dest.stuff = stuffToSend
         }
         // Pass the selected object to the new view controller.
     }
