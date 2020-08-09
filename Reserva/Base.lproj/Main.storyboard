@@ -746,6 +746,9 @@
                                         <state key="normal" title="Book">
                                             <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="bookPressed:" destination="W8c-RO-vn7" eventType="touchUpInside" id="Gi3-c7-gBK"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ks-4y-eTq">
                                         <rect key="frame" x="20" y="356" width="374" height="144"/>
@@ -775,6 +778,18 @@
                         <viewLayoutGuide key="safeArea" id="dhT-OZ-nQq"/>
                     </view>
                     <navigationItem key="navigationItem" id="BBb-ND-Mc5"/>
+                    <connections>
+                        <outlet property="bookButton" destination="pkn-BF-ybW" id="ouM-yc-FoC"/>
+                        <outlet property="followButton" destination="ed5-x2-psU" id="Mgx-Vx-34y"/>
+                        <outlet property="inDepthAdmission" destination="da1-Pw-8Hh" id="MoJ-ze-j8Q"/>
+                        <outlet property="inDepthDateLabel" destination="x5Y-ES-Du2" id="LuX-Tg-hOF"/>
+                        <outlet property="inDepthEventDescription" destination="1Ks-4y-eTq" id="FsY-Sy-VPZ"/>
+                        <outlet property="inDepthEventName" destination="a3O-jE-zdy" id="HYI-yc-Elu"/>
+                        <outlet property="inDepthImageView" destination="OXj-M0-o7e" id="sPZ-ZE-SXW"/>
+                        <outlet property="inDepthReviewLabel" destination="QqI-Cg-PGq" id="iJC-WJ-SMd"/>
+                        <outlet property="inDepthWebsiteLabel" destination="iaE-o6-CFx" id="dhR-DH-2Od"/>
+                        <outlet property="wishlistButton" destination="bqb-Eb-HM7" id="GIQ-re-sEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syR-Uc-PVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
