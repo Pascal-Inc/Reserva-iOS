@@ -45,9 +45,10 @@ class SearchInDepthViewController: UIViewController {
         let alert = UIAlertController(title: "You have booked for \(stuff!.eventName)", message: "Check your events for the events you signed up for!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in
             self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:
-            {action in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
             self.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true)
