@@ -19,25 +19,7 @@ class TabBarViewController: UITabBarController {
         appearance.shadowImage = nil
         
         Tabbar.standardAppearance = appearance
-//        let homeTab = UITabBarItem()
-//        homeTab.title = "Home"
-//        //homeTab.image = UIImage(named: "")
-//        //homeTab.selectedImage = UIImage(named: "")
-//
-//        let browseTab  = UITabBarItem()
-//        browseTab.title = "Browse"
-//        //browseTab.image = UIImage(named: "")
-//        //homeTab.selectedImage = UIImage(named: "")
-//
-//        let HomeVC = HomeViewController()
-//        HomeVC.tabBarItem = homeTab
-//
-//        let BrowseVC = BrowseViewController()
-//        BrowseVC.tabBarItem = browseTab
-//
-//        let TabBarViewController = UITabBarController()
-//        TabBarViewController.viewControllers = [HomeVC,BrowseVC]
-//        TabBarViewController.selectedViewController = HomeVC
+
     }
     
     override func viewDidLoad() {
