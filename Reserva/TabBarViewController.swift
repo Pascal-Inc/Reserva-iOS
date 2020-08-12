@@ -10,7 +10,15 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-//    func initialiseTabBar() {
+    @IBOutlet var Tabbar: UITabBar!
+    
+    func initialiseTabBar() {
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = .white
+        appearance.shadowColor = nil
+        appearance.shadowImage = nil
+        
+        Tabbar.standardAppearance = appearance
 //        let homeTab = UITabBarItem()
 //        homeTab.title = "Home"
 //        //homeTab.image = UIImage(named: "")
@@ -30,11 +38,11 @@ class TabBarViewController: UITabBarController {
 //        let TabBarViewController = UITabBarController()
 //        TabBarViewController.viewControllers = [HomeVC,BrowseVC]
 //        TabBarViewController.selectedViewController = HomeVC
-//    }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // initialiseTabBar()
+        initialiseTabBar()
         self.selectedIndex = 2
         navigationItem.setHidesBackButton(true, animated: false)
     }
