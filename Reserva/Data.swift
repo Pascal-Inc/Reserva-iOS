@@ -75,6 +75,13 @@ var events = [
     Event(eventImage: "placeholder_image", eventName: "Masks Sewn With Love", rating: 5.0, userLiked: true, eventDescription: "A community project to sew reusable cloth masks", eventCategory: "Charity and Causes", eventFrequency: "Weekly")
 ]
 
+struct Setting {
+    var row : String
+    var rowDetail : String
+}
+
+var settingArray = [Setting(row: "Account Details", rowDetail: "Name, Email, Phone Number"), Setting(row: "Location", rowDetail: "City Name: \(userLongitude ?? 0.0), \(userLatitude ?? 0.0)"), Setting(row: "Privacy", rowDetail: "Terms of Service, Privacy Policy"), Setting(row: "Notifications", rowDetail: "Room Bookings, Upcoming Events"), Setting(row: "About Us", rowDetail: "Pascal Inc."), Setting(row: "Log Out", rowDetail: "")]
+
 
 
    /* func buttonstyle1() {

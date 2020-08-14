@@ -9,19 +9,7 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-
-    var row1 = ["Account Details"]
-    var row1Detail = ["Name, Email, Phone Number"]
-    var row2 = ["Location"]
-    var row2Detail = ["City Name: \(userLongitude ?? 0.0), \(userLatitude ?? 0.0)"]
-    var row3 = ["Privacy"]
-    var row3Detail = ["Terms of Service, Privacy Policy"]
-    var row4 = ["Notifications"]
-    var row4Detail = ["Room Bookings, Upcoming Events"]
-    var row5 = ["About Us"]
-    var row5Detail = ["Pascal Inc."]
-    var row6 = ["Log Out"]
-    var row6Detail = [""]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,39 +29,37 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return settingArray.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath)
 
         // Configure the cell...
-        var cellMainText = ""
-        var cellSubText = ""
-        if indexPath.row == 0 {
-            cellMainText = row1[0]
-            cellSubText = row1Detail[0]
-        } else if indexPath.row == 1 {
-            cellMainText = row2[0]
-            cellSubText = row2Detail[0]
-        } else if indexPath.row == 2 {
-            cellMainText = row3[0]
-            cellSubText = row3Detail[0]
-        } else if indexPath.row == 3 {
-            cellMainText = row4[0]
-            cellSubText = row4Detail[0]
-        } else if indexPath.row == 4 {
-            cellMainText = row5[0]
-            cellSubText = row5Detail[0]
-        } else if indexPath.row == 5 {
-            cellMainText = row6[0]
-            cellSubText = row6Detail[0]
+        if let cell = cell as? SettingsTableViewCell {
+            let settingStuff = settingArray[indexPath.row]
+            cell.settingImageView.image = UIImage(named: "")
+            cell.settingName.text = settingStuff.row
+            cell.settingDetail.text = settingStuff.rowDetail
         }
-
-        cell.textLabel?.text = cellMainText
-        cell.detailTextLabel?.text = cellSubText
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            performSegue(withIdentifier: "accountSegue", sender: nil)
+        } else if indexPath.row == 1 {
+            performSegue(withIdentifier: "locationSegue", sender: nil)
+        } else if indexPath.row == 2 {
+            performSegue(withIdentifier: "privacySegue", sender: nil)
+        } else if indexPath.row == 3 {
+            performSegue(withIdentifier: "notificationsSegue", sender: nil)
+        } else if indexPath.row == 4 {
+            performSegue(withIdentifier: "aboutSegue", sender: nil)
+        } else if indexPath.row == 5 {
+            
+        }
     }
 
     /*
