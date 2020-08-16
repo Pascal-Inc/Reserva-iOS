@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mv5-Nf-VoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596" y="1606"/>
+            <point key="canvasLocation" x="2594" y="1606"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sLt-v8-kQc">
@@ -291,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0h-7g-0Gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3248" y="1927"/>
+            <point key="canvasLocation" x="3409" y="1796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ypn-WN-Lvp">
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hue-Bc-eeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3951" y="1923"/>
+            <point key="canvasLocation" x="4270" y="1796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FbH-ay-YCn">
@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5q-xr-R3K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4662" y="1877"/>
+            <point key="canvasLocation" x="5022" y="1796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mvS-QH-ngy">
@@ -339,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vuz-Ca-YA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4822" y="2579"/>
+            <point key="canvasLocation" x="5022" y="2579"/>
         </scene>
         <!--Settings-->
         <scene sceneID="zAf-7h-OsI">
@@ -416,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5V3-eC-mG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3951" y="2600"/>
+            <point key="canvasLocation" x="4271" y="2579"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="dII-bz-Bud">
@@ -767,7 +767,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scQ-IS-xUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597" y="3005"/>
+            <point key="canvasLocation" x="2596" y="3056"/>
         </scene>
         <!--Search In Depth View Controller-->
         <scene sceneID="3f6-Cn-DPh">
@@ -893,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syR-Uc-PVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3409" y="3005"/>
+            <point key="canvasLocation" x="3409" y="3056"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="mhN-j2-ghl">
@@ -996,7 +996,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygF-Mf-9O7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="3005"/>
+            <point key="canvasLocation" x="1777" y="3056"/>
         </scene>
         <!--Events-->
         <scene sceneID="nXA-DQ-R8k">
