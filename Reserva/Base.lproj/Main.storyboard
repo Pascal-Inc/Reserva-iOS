@@ -197,8 +197,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIi-xh-2jt">
+                                <rect key="frame" x="0.0" y="140" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-CD-PzF">
-                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="622"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" rowHeight="120" id="rQo-aA-MMN" customClass="HomeTableViewCell" customModule="Reserva" customModuleProvider="target">
@@ -253,7 +260,7 @@
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="62c-Nt-AJJ">
-                                <rect key="frame" x="20" y="88" width="374" height="32"/>
+                                <rect key="frame" x="20" y="140" width="374" height="32"/>
                                 <segments>
                                     <segment title="Booked Events"/>
                                     <segment title="Hosted Events"/>
@@ -265,10 +272,14 @@
                         <constraints>
                             <constraint firstItem="iPW-CD-PzF" firstAttribute="top" secondItem="62c-Nt-AJJ" secondAttribute="bottom" constant="20" id="0QV-kY-Y5m"/>
                             <constraint firstItem="62c-Nt-AJJ" firstAttribute="leading" secondItem="Wni-Ec-JD3" secondAttribute="leading" constant="20" id="F7L-QO-nEh"/>
-                            <constraint firstItem="iPW-CD-PzF" firstAttribute="height" secondItem="62c-Nt-AJJ" secondAttribute="height" multiplier="22.129" id="GfP-43-sKp"/>
+                            <constraint firstItem="iPW-CD-PzF" firstAttribute="height" secondItem="62c-Nt-AJJ" secondAttribute="height" multiplier="20" id="GfP-43-sKp"/>
+                            <constraint firstItem="qIi-xh-2jt" firstAttribute="leading" secondItem="Wni-Ec-JD3" secondAttribute="leading" id="JgN-Vc-nVD"/>
+                            <constraint firstItem="iPW-CD-PzF" firstAttribute="top" secondItem="62c-Nt-AJJ" secondAttribute="bottom" constant="20" id="KkA-Zg-eNl"/>
                             <constraint firstAttribute="bottom" secondItem="iPW-CD-PzF" secondAttribute="bottom" id="RkE-fV-1ff"/>
                             <constraint firstItem="iPW-CD-PzF" firstAttribute="leading" secondItem="Wni-Ec-JD3" secondAttribute="leading" id="WOf-cV-jdz"/>
+                            <constraint firstItem="qIi-xh-2jt" firstAttribute="trailing" secondItem="Wni-Ec-JD3" secondAttribute="trailing" id="YAy-ck-0Qa"/>
                             <constraint firstItem="Wni-Ec-JD3" firstAttribute="trailing" secondItem="62c-Nt-AJJ" secondAttribute="trailing" constant="20" id="ayt-4w-jgN"/>
+                            <constraint firstItem="qIi-xh-2jt" firstAttribute="top" secondItem="Wni-Ec-JD3" secondAttribute="top" id="cxf-FV-Q3Y"/>
                             <constraint firstItem="62c-Nt-AJJ" firstAttribute="top" secondItem="Wni-Ec-JD3" secondAttribute="top" id="kzr-ph-dBQ"/>
                             <constraint firstItem="iPW-CD-PzF" firstAttribute="trailing" secondItem="Wni-Ec-JD3" secondAttribute="trailing" id="xLg-9B-O2n"/>
                         </constraints>
@@ -1046,7 +1057,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="I3F-P2-zXu"/>
+        <segue reference="Qjp-AS-pIW"/>
         <segue reference="FF6-kU-e37"/>
     </inferredMetricsTieBreakers>
     <resources>

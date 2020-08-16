@@ -31,10 +31,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if EventSelection.selectedSegmentIndex == 0 {
-            return 120
-        }
-        return 20
+//        if EventSelection.selectedSegmentIndex == 0 {
+//            
+//        }
+        return 120
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
