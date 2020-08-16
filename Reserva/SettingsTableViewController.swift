@@ -31,6 +31,10 @@ class SettingsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return settingArray.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
