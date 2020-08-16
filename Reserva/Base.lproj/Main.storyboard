@@ -197,9 +197,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-CD-PzF">
-                                <rect key="frame" x="0.0" y="196" width="414" height="617"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-CD-PzF">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" rowHeight="120" id="rQo-aA-MMN" customClass="HomeTableViewCell" customModule="Reserva" customModuleProvider="target">
@@ -253,9 +252,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="62c-Nt-AJJ">
-                                <rect key="frame" x="20" y="157" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="62c-Nt-AJJ">
+                                <rect key="frame" x="20" y="88" width="374" height="32"/>
                                 <segments>
                                     <segment title="Booked Events"/>
                                     <segment title="Hosted Events"/>
@@ -264,6 +262,16 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iPW-CD-PzF" firstAttribute="top" secondItem="62c-Nt-AJJ" secondAttribute="bottom" constant="20" id="0QV-kY-Y5m"/>
+                            <constraint firstItem="62c-Nt-AJJ" firstAttribute="leading" secondItem="Wni-Ec-JD3" secondAttribute="leading" constant="20" id="F7L-QO-nEh"/>
+                            <constraint firstItem="iPW-CD-PzF" firstAttribute="height" secondItem="62c-Nt-AJJ" secondAttribute="height" multiplier="22.129" id="GfP-43-sKp"/>
+                            <constraint firstAttribute="bottom" secondItem="iPW-CD-PzF" secondAttribute="bottom" id="RkE-fV-1ff"/>
+                            <constraint firstItem="iPW-CD-PzF" firstAttribute="leading" secondItem="Wni-Ec-JD3" secondAttribute="leading" id="WOf-cV-jdz"/>
+                            <constraint firstItem="Wni-Ec-JD3" firstAttribute="trailing" secondItem="62c-Nt-AJJ" secondAttribute="trailing" constant="20" id="ayt-4w-jgN"/>
+                            <constraint firstItem="62c-Nt-AJJ" firstAttribute="top" secondItem="Wni-Ec-JD3" secondAttribute="top" id="kzr-ph-dBQ"/>
+                            <constraint firstItem="iPW-CD-PzF" firstAttribute="trailing" secondItem="Wni-Ec-JD3" secondAttribute="trailing" id="xLg-9B-O2n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Wni-Ec-JD3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="42f-LQ-ibd"/>
@@ -275,9 +283,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mv5-Nf-VoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594" y="1606"/>
+            <point key="canvasLocation" x="2592.753623188406" y="1605.8035714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Account-->
         <scene sceneID="sLt-v8-kQc">
             <objects>
                 <viewController id="Nr6-Wp-Dic" sceneMemberID="viewController">
@@ -287,7 +295,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="M7T-XR-TxC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Si8-7w-evX"/>
+                    <navigationItem key="navigationItem" title="Account" id="Si8-7w-evX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0h-7g-0Gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1017,11 +1025,11 @@
             </objects>
             <point key="canvasLocation" x="1777" y="1606"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Settings-->
         <scene sceneID="8cc-Kg-thR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7WG-ML-8Yr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person.circle" catalog="system" id="Ftx-MQ-lOF"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="Ftx-MQ-lOF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SKp-GV-dUf">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1044,7 +1052,6 @@
     <resources>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="placeholder_image" width="1920" height="1280"/>
     </resources>
 </document>
