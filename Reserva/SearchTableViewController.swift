@@ -22,7 +22,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         searchBar.delegate = self
         filteredData = events
-    }
+    }lmaolmao
 
     // MARK: - Table view data source
 
