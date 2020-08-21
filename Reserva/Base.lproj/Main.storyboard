@@ -38,9 +38,6 @@
                                 <rect key="frame" x="30" y="809" width="354" height="38"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Get Started"/>
-                                <connections>
-                                    <segue destination="hHv-0i-gEo" kind="show" identifier="getStarted" id="8Ze-Yz-Ok7"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to Reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-0F-BKf">
                                 <rect key="frame" x="30" y="516" width="354" height="39"/>
@@ -532,89 +529,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3c-ob-MtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2930" y="538"/>
-        </scene>
-        <!--LocationViewController-->
-        <scene sceneID="Vlq-x1-1Gl">
-            <objects>
-                <viewController title="LocationViewController" id="hHv-0i-gEo" customClass="LocationViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kks-vC-jQw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <userGuides>
-                            <userLayoutGuide location="384" affinity="minX"/>
-                            <userLayoutGuide location="30" affinity="minX"/>
-                            <userLayoutGuide location="59" affinity="minX"/>
-                            <userLayoutGuide location="353" affinity="minX"/>
-                            <userLayoutGuide location="50" affinity="minY"/>
-                            <userLayoutGuide location="866" affinity="minY"/>
-                            <userLayoutGuide location="852" affinity="minY"/>
-                            <userLayoutGuide location="803" affinity="minY"/>
-                            <userLayoutGuide location="45" affinity="minX"/>
-                            <userLayoutGuide location="369" affinity="minX"/>
-                            <userLayoutGuide location="836" affinity="minY"/>
-                            <userLayoutGuide location="595" affinity="minY"/>
-                            <userLayoutGuide location="448" affinity="minY"/>
-                            <userLayoutGuide location="516" affinity="minY"/>
-                            <userLayoutGuide location="207" affinity="minX"/>
-                            <userLayoutGuide location="150" affinity="minY"/>
-                            <userLayoutGuide location="656" affinity="minY"/>
-                        </userGuides>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-IF-Ml5">
-                                <rect key="frame" x="30" y="787" width="354" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Use My Location"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Find Your City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87O-Kp-3ys">
-                                <rect key="frame" x="30" y="516" width="354" height="39"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-yv-2hk">
-                                <rect key="frame" x="45" y="144" width="324" height="1280"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reserva needs your Location in order to deliver the best experience" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-bB-AWd">
-                                <rect key="frame" x="30" y="595" width="354" height="79"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwI-aK-cX0">
-                                <rect key="frame" x="30" y="847" width="354" height="38"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Choose City"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="87O-Kp-3ys" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="0Af-9Q-Ocl"/>
-                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="FWv-bB-AWd" secondAttribute="trailing" constant="30" id="0dQ-mp-gZi"/>
-                            <constraint firstItem="FWv-bB-AWd" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="9iE-aO-oYI"/>
-                            <constraint firstItem="87O-Kp-3ys" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="J6c-47-lBv"/>
-                            <constraint firstItem="bHa-yv-2hk" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="45" id="KPS-KG-Caz"/>
-                            <constraint firstItem="VwI-aK-cX0" firstAttribute="leading" secondItem="XEx-De-QFO" secondAttribute="leading" constant="30" id="KdK-Op-nQJ"/>
-                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="bHa-yv-2hk" secondAttribute="trailing" constant="45" id="Qev-vS-NRV"/>
-                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="VwI-aK-cX0" secondAttribute="trailing" constant="30" id="b4h-Lx-svt"/>
-                            <constraint firstItem="XEx-De-QFO" firstAttribute="trailing" secondItem="87O-Kp-3ys" secondAttribute="trailing" constant="30" id="ezx-sw-BX8"/>
-                            <constraint firstItem="FWv-bB-AWd" firstAttribute="top" secondItem="87O-Kp-3ys" secondAttribute="bottom" constant="40" id="iDg-7s-O4I"/>
-                            <constraint firstAttribute="bottom" secondItem="VwI-aK-cX0" secondAttribute="bottom" constant="11" id="k02-RH-baE"/>
-                            <constraint firstItem="bHa-yv-2hk" firstAttribute="top" secondItem="XEx-De-QFO" secondAttribute="top" constant="100" id="or4-GW-8F3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XEx-De-QFO"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="yx5-ba-3w8"/>
-                    <connections>
-                        <outlet property="chooseCityButton" destination="VwI-aK-cX0" id="xuZ-QQ-Ifg"/>
-                        <outlet property="subtitleLabel" destination="FWv-bB-AWd" id="eKQ-3U-3zC"/>
-                        <outlet property="titleLabel" destination="87O-Kp-3ys" id="4v8-3a-YoB"/>
-                        <outlet property="useLocationButton" destination="Xix-IF-Ml5" id="mtc-ow-w8t"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mJC-G4-Al9" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2163.768115942029" y="122.54464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aSp-iC-Bbg">
