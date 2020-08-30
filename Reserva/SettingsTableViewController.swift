@@ -48,6 +48,7 @@ class SettingsTableViewController: UITableViewController {
             cell.settingDetail.text = settingStuff.rowDetail
         }
         return cell
+        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
