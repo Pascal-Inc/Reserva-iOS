@@ -23,7 +23,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         searchBar.delegate = self
         filteredData = events
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

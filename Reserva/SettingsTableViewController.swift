@@ -53,15 +53,15 @@ class SettingsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            performSegue(withIdentifier: "accountSegue", sender: nil)
+            performSegue(withIdentifier: "", sender: nil)
         } else if indexPath.row == 1 {
-            performSegue(withIdentifier: "locationSegue", sender: nil)
+            performSegue(withIdentifier: "", sender: nil)
         } else if indexPath.row == 2 {
             performSegue(withIdentifier: "privacySegue", sender: nil)
         } else if indexPath.row == 3 {
-            performSegue(withIdentifier: "notificationsSegue", sender: nil)
+            performSegue(withIdentifier: "", sender: nil)
         } else if indexPath.row == 4 {
-            performSegue(withIdentifier: "aboutSegue", sender: nil)
+            performSegue(withIdentifier: "", sender: nil)
         } else if indexPath.row == 5 {
             
         }
