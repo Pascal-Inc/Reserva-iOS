@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>904039165837-2ui03ba5jbpkj7vq01e007md20u4kvvb.apps.googleusercontent.com</string>
+	<string>937511972512-eo7k2f5rrf7i818jp7r2cdkqpmat3bja.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.904039165837-2ui03ba5jbpkj7vq01e007md20u4kvvb</string>
+	<string>com.googleusercontent.apps.937511972512-eo7k2f5rrf7i818jp7r2cdkqpmat3bja</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDq0UAi5Cm-yr6wsBl_GTAhFyBx3Fu_a1k</string>
+	<string>AIzaSyBhccJtUPjE2monZ0btRD08LpOKTiiigtU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>904039165837</string>
+	<string>937511972512</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>org.pascalinc.Reserva-iOS</string>
 	<key>PROJECT_ID</key>
-	<string>reserva-cfcbf</string>
+	<string>reserva-7952f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>reserva-cfcbf.appspot.com</string>
+	<string>reserva-7952f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:904039165837:ios:4e69970c49de9e0c4797c4</string>
+	<string>1:937511972512:ios:c5f6d45d143ca82e2463c5</string>
 	<key>DATABASE_URL</key>
-	<string>https://reserva-cfcbf.firebaseio.com</string>
+	<string>https://reserva-7952f.firebaseio.com</string>
 </dict>
 </plist>

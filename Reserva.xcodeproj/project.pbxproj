@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		380D7CB752563097E815F816 /* Pods_Reserva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2985C2E98E90C2C074981F35 /* Pods_Reserva.framework */; };
 		89445C8624B471D3006E956D /* ExtraSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */; };
-		896FF40424CB06C500ECEAC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */; };
 		897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */; };
 		897E2B5324B1C84C000903A8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5224B1C84C000903A8 /* TabBarViewController.swift */; };
 		899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */; };
@@ -32,6 +31,7 @@
 		A843499224D6D5E000EFAA32 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */; };
 		A8A85C6D24E0075300D4178A /* SearchInDepthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A85C6C24E0075300D4178A /* SearchInDepthViewController.swift */; };
 		A8B10A1024E695C40040DAC8 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B10A0F24E695C40040DAC8 /* SettingsTableViewCell.swift */; };
+		A8B6B2282518C1E300769B0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8B6B2272518C1E300769B0B /* GoogleService-Info.plist */; };
 		B41BA09A24B352DC00054B46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BA09924B352DC00054B46 /* Data.swift */; };
 		B481F3E024B2E1C000CCEC12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */; };
 		B4CAE48324B9589700FFC703 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE48224B9589700FFC703 /* HomeViewController.swift */; };
@@ -43,7 +43,6 @@
 		2F4774D059CB2A73444FE904 /* Pods-Reserva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reserva.debug.xcconfig"; path = "Target Support Files/Pods-Reserva/Pods-Reserva.debug.xcconfig"; sourceTree = "<group>"; };
 		3255811C51619E8ABFDEA2D3 /* Pods-Reserva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reserva.release.xcconfig"; path = "Target Support Files/Pods-Reserva/Pods-Reserva.release.xcconfig"; sourceTree = "<group>"; };
 		89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSettingsTableViewController.swift; sourceTree = "<group>"; };
-		896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
 		897E2B5224B1C84C000903A8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		A8A85C6C24E0075300D4178A /* SearchInDepthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInDepthViewController.swift; sourceTree = "<group>"; };
 		A8B10A0F24E695C40040DAC8 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		A8B6B2272518C1E300769B0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B41BA09924B352DC00054B46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B481F3DF24B2E1C000CCEC12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B4CAE48224B9589700FFC703 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				89DA116D24AF6C0400496F3C /* Main.storyboard */,
 				89DA117224AF6C0900496F3C /* LaunchScreen.storyboard */,
 				89DA117524AF6C0900496F3C /* Info.plist */,
-				896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */,
+				A8B6B2272518C1E300769B0B /* GoogleService-Info.plist */,
 				A843498F24D6D5D900EFAA32 /* HomeTableViewCell.swift */,
 				A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */,
 				A8B10A0F24E695C40040DAC8 /* SettingsTableViewCell.swift */,
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DA117424AF6C0900496F3C /* LaunchScreen.storyboard in Resources */,
-				896FF40424CB06C500ECEAC7 /* GoogleService-Info.plist in Resources */,
+				A8B6B2282518C1E300769B0B /* GoogleService-Info.plist in Resources */,
 				89DA117124AF6C0900496F3C /* Assets.xcassets in Resources */,
 				89DA116F24AF6C0400496F3C /* Main.storyboard in Resources */,
 			);
