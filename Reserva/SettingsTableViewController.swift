@@ -47,24 +47,26 @@ class SettingsTableViewController: UITableViewController {
             cell.settingName.text = settingStuff.row
             cell.settingDetail.text = settingStuff.rowDetail
         }
+        
         return cell
         
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            performSegue(withIdentifier: "", sender: nil)
-        } else if indexPath.row == 1 {
-            performSegue(withIdentifier: "", sender: nil)
-        } else if indexPath.row == 2 {
-            performSegue(withIdentifier: "privacySegue", sender: nil)
-        } else if indexPath.row == 3 {
-            performSegue(withIdentifier: "", sender: nil)
-        } else if indexPath.row == 4 {
-            performSegue(withIdentifier: "", sender: nil)
-        } else if indexPath.row == 5 {
-            
-        }
+        performSegue(withIdentifier: "settingSegue", sender: nil)
+//        if indexPath.row == 0 {
+//            performSegue(withIdentifier: "", sender: nil)
+//        } else if indexPath.row == 1 {
+//            performSegue(withIdentifier: "", sender: nil)
+//        } else if indexPath.row == 2 {
+//            performSegue(withIdentifier: "", sender: nil)
+//        } else if indexPath.row == 3 {
+//            performSegue(withIdentifier: "", sender: nil)
+//        } else if indexPath.row == 4 {
+//            performSegue(withIdentifier: "", sender: nil)
+//        } else if indexPath.row == 5 {
+//
+//        }
     }
 
     /*
@@ -102,14 +104,21 @@ class SettingsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "settingSegue" {
+            let destVC = segue.destination as! InDepthSettingsViewController
+            let indexPath = tableView.indexPathForSelectedRow
+            let cell = tableView.cellForRow(at: indexPath!)
+            if let cell = cell as? SettingsTableViewCell {
+                destVC.settingName = cell.settingName.text
+            }
+        }
     }
-    */
 
 }
