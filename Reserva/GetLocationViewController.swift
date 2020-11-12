@@ -25,12 +25,11 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
         
         defaults.set(false, forKey: "setLocationAlready")
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         self.locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.authorizationStatus() == .notDetermined {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
+            
         } else if CLLocationManager.authorizationStatus() == .denied ||  CLLocationManager.authorizationStatus() == .restricted {
             let alert = UIAlertController(title: "Location access denied for \"Reserva\"", message: "Allow \"Reserva\" to access your location?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Open Settings", style: .cancel, handler: {action in
