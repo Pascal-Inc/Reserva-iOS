@@ -15,13 +15,12 @@ class SearchInDepthViewController: UIViewController {
     @IBOutlet weak var wishlistButton: UIButton!
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var inDepthDateLabel: UILabel!
+    @IBOutlet weak var inDepthWebsiteLabel: UILabel!
     @IBOutlet weak var inDepthReviewLabel: UILabel!
     @IBOutlet weak var inDepthAdmission: UILabel!
     @IBOutlet weak var inDepthEventDescription: UILabel!
     @IBOutlet weak var inDepthImageView: UIImageView!
     @IBOutlet weak var inDepthEventName: UILabel!
-    @IBOutlet weak var inDepthWebsiteButton: UIButton!
-    @IBOutlet weak var scrollView: UIScrollView!
     
     var stuff: Event?
     
@@ -29,29 +28,27 @@ class SearchInDepthViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scrollView.isScrollEnabled = true
-        bookButton.layer.cornerRadius = 10
-        followButton.layer.cornerRadius = 10
-        wishlistButton.layer.cornerRadius = 10
+        bookButton.layer.cornerRadius = 20
+        followButton.layer.cornerRadius = 20
+        wishlistButton.layer.cornerRadius = 20
         
         inDepthImageView.image = UIImage(named: stuff?.eventImage ?? "")
-        self.title = stuff?.eventName
         inDepthEventName.text = stuff?.eventName
         inDepthEventDescription.text = stuff?.eventDescription
-        inDepthAdmission.text = stuff?.eventCost ?? "$0.00"
+        inDepthAdmission.text = stuff?.eventCost
         inDepthDateLabel.text = "\(stuff?.eventStartDate ?? "") - \(stuff?.eventEndDate ?? "")"
-        inDepthReviewLabel.text = "\(stuff?.rating ?? 5.0) ⭐️"
-        inDepthWebsiteButton.setTitle("www.website.com", for: .normal)
+        inDepthReviewLabel.text = ""
+        inDepthWebsiteLabel.text = ""
     }
     
     @IBAction func bookPressed(_ sender: Any) {
         let alert = UIAlertController(title: "You have booked for \(stuff!.eventName)", message: "Check your events for the events you signed up for!", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in
             self.dismiss(animated: true, completion: nil)
             self.navigationController?.popViewController(animated: true)
             self.dismiss(animated: true, completion: nil)
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: {action in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
             self.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true)

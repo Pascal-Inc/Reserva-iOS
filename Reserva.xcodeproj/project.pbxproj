@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		380D7CB752563097E815F816 /* Pods_Reserva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2985C2E98E90C2C074981F35 /* Pods_Reserva.framework */; };
 		89445C8624B471D3006E956D /* ExtraSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */; };
-		896FF40424CB06C500ECEAC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */; };
-		897087CD255CBB1E00245444 /* InDepthSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897087CC255CBB1E00245444 /* InDepthSettingsViewController.swift */; };
 		897E2B5124B1BC19000903A8 /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */; };
 		897E2B5324B1C84C000903A8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E2B5224B1C84C000903A8 /* TabBarViewController.swift */; };
 		899D7AFE24B2043500D473F8 /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */; };
@@ -45,8 +43,6 @@
 		2F4774D059CB2A73444FE904 /* Pods-Reserva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reserva.debug.xcconfig"; path = "Target Support Files/Pods-Reserva/Pods-Reserva.debug.xcconfig"; sourceTree = "<group>"; };
 		3255811C51619E8ABFDEA2D3 /* Pods-Reserva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reserva.release.xcconfig"; path = "Target Support Files/Pods-Reserva/Pods-Reserva.release.xcconfig"; sourceTree = "<group>"; };
 		89445C8524B471D3006E956D /* ExtraSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSettingsTableViewController.swift; sourceTree = "<group>"; };
-		896FF40324CB06C400ECEAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		897087CC255CBB1E00245444 /* InDepthSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InDepthSettingsViewController.swift; sourceTree = "<group>"; };
 		897E2B5024B1BC19000903A8 /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
 		897E2B5224B1C84C000903A8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		899D7AFD24B2043500D473F8 /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +153,6 @@
 				A843499124D6D5E000EFAA32 /* SearchTableViewCell.swift */,
 				A8B10A0F24E695C40040DAC8 /* SettingsTableViewCell.swift */,
 				89FA370D24FF987500C04959 /* LaunchScreenViewController.swift */,
-				897087CC255CBB1E00245444 /* InDepthSettingsViewController.swift */,
 			);
 			path = Reserva;
 			sourceTree = "<group>";
@@ -300,7 +295,6 @@
 				899D7B0424B2245700D473F8 /* SearchTableViewController.swift in Sources */,
 				899D7B0224B2244500D473F8 /* EventsTableViewController.swift in Sources */,
 				A8B10A1024E695C40040DAC8 /* SettingsTableViewCell.swift in Sources */,
-				897087CD255CBB1E00245444 /* InDepthSettingsViewController.swift in Sources */,
 				89DA117E24AF715000496F3C /* SignUpViewController.swift in Sources */,
 				B41BA09A24B352DC00054B46 /* Data.swift in Sources */,
 			);
