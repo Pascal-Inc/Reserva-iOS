@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,6 +15,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var EventSelection: UISegmentedControl!
     
     var eventDisplayType = "Booked events"
+    var docRef: DocumentReference!
     
     /*@IBAction func eventTypeSelected(_ sender: Any) {
     }*/
@@ -77,6 +79,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         EventSelection.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color1!], for: .normal)
         tableView.dataSource = self
         tableView.delegate = self
+        docRef = Firestore.firestore().collection("Events").document("rPMkYHZtRZUqNeiJAzX3")
     }
     
 
