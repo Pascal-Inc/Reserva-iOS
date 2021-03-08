@@ -199,7 +199,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" text="" placeholder="Search" id="obs-HC-hfX">
-                                <rect key="frame" x="0.0" y="200" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="200" width="342" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
@@ -283,6 +283,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5f-fo-Zmx">
+                                <rect key="frame" x="355" y="213" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Filter"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wni-Ec-JD3"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,6 +296,7 @@
                     <connections>
                         <outlet property="EventSelection" destination="62c-Nt-AJJ" id="0L8-d9-kAx"/>
                         <outlet property="homeTableView" destination="iPW-CD-PzF" id="dkm-LA-iX1"/>
+                        <outlet property="searchBar" destination="obs-HC-hfX" id="VWG-GG-07L"/>
                         <outlet property="tableView" destination="iPW-CD-PzF" id="Igt-Pu-GN8"/>
                     </connections>
                 </viewController>
@@ -661,9 +667,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="jTP-eE-HsD">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsCell" rowHeight="120" id="kmG-O8-7ed" customClass="SearchTableViewCell" customModule="Reserva" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kmG-O8-7ed" id="RyZ-UH-tbq">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -719,8 +730,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Search" id="wU9-La-EOJ"/>
                     <connections>
-                        <outlet property="searchBar" destination="obs-HC-hfX" id="yAJ-2S-B0b"/>
-                        <segue destination="W8c-RO-vn7" kind="show" identifier="searchInDepth" id="Nv8-bN-vdS"/>
+                        <outlet property="searchBar" destination="jTP-eE-HsD" id="IyF-yK-a3L"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scQ-IS-xUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -732,7 +742,7 @@
             <objects>
                 <viewController id="W8c-RO-vn7" customClass="SearchInDepthViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ukc-rU-atz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO4-bV-Rkx">
@@ -851,7 +861,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syR-Uc-PVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3409" y="3056"/>
+            <point key="canvasLocation" x="3409" y="1606"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="mhN-j2-ghl">

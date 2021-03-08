@@ -16,11 +16,12 @@ struct homeEvents{
     var eventdate: String
     var eventimage: String
     var eventdesc: String
+    var eventkeywords: [String]
 }
 
 
 
-var arrayName = [homeEvents(eventname: "dummyData", eventtype: "dummyData", eventdate: "dummyData", eventimage: "placeholder_image", eventdesc: "dummyData")]
+var arrayName = [homeEvents(eventname: "dummyData", eventtype: "dummyData", eventdate: "dummyData", eventimage: "placeholder_image", eventdesc: "dummyData", eventkeywords: ["Food"])]
 
 var color1: UIColor? = UIColor(red: 114/255, green: 147/255, blue: 255/255, alpha: 1.0)
 var color2: UIColor? = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1.0)

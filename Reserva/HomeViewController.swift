@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var EventSelection: UISegmentedControl!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var eventDisplayType = "Booked events"
     var docRef: DocumentReference!
