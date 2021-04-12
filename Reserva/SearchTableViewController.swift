@@ -170,4 +170,22 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         }
         tableView.reloadData()
     }
+    
+    // MARK: Filter button configuration
+    
+    
+    @IBAction func filterPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Filter what", message: "e.g. Food", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Filter"
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+
+            if let filter = alert.textFields?.first?.text {
+                print("Your filter: \(filter)")
+            }
+        }))
+        self.present(alert, animated: true)
+    }
 }
