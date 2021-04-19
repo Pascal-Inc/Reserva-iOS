@@ -11,10 +11,17 @@ import UIKit
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var filters: UISegmentedControl!
     var filteredData: [Event]!
-    
+    var segments = ["All", "A → Z", "Z → A", "Date Descending", "Date Ascending", "Price Ascending", "Price Descending"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        filters.removeAllSegments()
+        filters.apportionsSegmentWidthsByContent = true
+        for i in 0...segments.count-1
+        {
+            filters.insertSegment(withTitle: segments[i], at: i, animated: false)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -174,18 +181,18 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     // MARK: Filter button configuration
     
     
-    @IBAction func filterPressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Filter what", message: "e.g. Food", preferredStyle: .alert)
-        alert.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Filter"
-        })
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-
-            if let filter = alert.textFields?.first?.text {
-                print("Your filter: \(filter)")
-            }
-        }))
-        self.present(alert, animated: true)
-    }
+//    @IBAction func filterPressed(_ sender: Any) {
+//        let alert = UIAlertController(title: "Filter what", message: "e.g. Food", preferredStyle: .alert)
+//        alert.addTextField(configurationHandler: { textField in
+//            textField.placeholder = "Filter"
+//        })
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+//
+//            if let filter = alert.textFields?.first?.text {
+//                print("Your filter: \(filter)")
+//            }
+//        }))
+//        self.present(alert, animated: true)
+//    }
 }

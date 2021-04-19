@@ -573,28 +573,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="rhR-qd-nHc">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <searchBar contentMode="redraw" id="jTP-eE-HsD">
-                                    <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="406" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnQ-40-PDR">
-                                    <rect key="frame" x="366" y="8" width="35" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Filter"/>
-                                    <connections>
-                                        <action selector="filterPressed:" destination="HEU-yT-uqE" eventType="touchUpInside" id="ls5-Wx-jlt"/>
-                                    </connections>
-                                </button>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2eZ-0h-gHc">
+                                    <rect key="frame" x="10" y="54" width="394" height="32"/>
+                                    <segments>
+                                        <segment title="First"/>
+                                        <segment title="Second"/>
+                                    </segments>
+                                </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="2eZ-0h-gHc" firstAttribute="top" secondItem="jTP-eE-HsD" secondAttribute="bottom" constant="10" id="P4f-K6-1Q1"/>
+                                <constraint firstAttribute="trailing" secondItem="2eZ-0h-gHc" secondAttribute="trailing" constant="10" id="ZyV-F5-d42"/>
+                                <constraint firstItem="2eZ-0h-gHc" firstAttribute="leading" secondItem="rhR-qd-nHc" secondAttribute="leading" constant="10" id="f6K-zI-4ts"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsCell" rowHeight="120" id="kmG-O8-7ed" customClass="SearchTableViewCell" customModule="Reserva" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="119" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kmG-O8-7ed" id="RyZ-UH-tbq">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -650,7 +654,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Search" id="wU9-La-EOJ"/>
                     <connections>
+                        <outlet property="filters" destination="2eZ-0h-gHc" id="pKU-v8-Rwb"/>
                         <outlet property="searchBar" destination="jTP-eE-HsD" id="IyF-yK-a3L"/>
+                        <segue destination="W8c-RO-vn7" kind="show" identifier="searchInDepth" id="UYH-Xd-hsp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scQ-IS-xUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -662,7 +668,7 @@
             <objects>
                 <viewController id="W8c-RO-vn7" customClass="SearchInDepthViewController" customModule="Reserva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ukc-rU-atz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO4-bV-Rkx">
