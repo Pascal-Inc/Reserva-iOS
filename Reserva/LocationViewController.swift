@@ -16,8 +16,6 @@ class LocationViewController: UIViewController {
         @IBOutlet weak var useLocationButton: UIButton!
         @IBOutlet weak var chooseCityButton: UIButton!
         
-        
-        
         func UIsetup () {
             
             titleLabel.textColor = color1
@@ -33,6 +31,4 @@ class LocationViewController: UIViewController {
             super.viewDidLoad()
             return UIsetup()
         }
-
-
     }

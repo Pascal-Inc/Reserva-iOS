@@ -18,9 +18,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var eventDisplayType = "Booked events"
     var docRef: DocumentReference!
     
-    /*@IBAction func eventTypeSelected(_ sender: Any) {
-    }*/
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -34,9 +31,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if EventSelection.selectedSegmentIndex == 0 {
-//            
-//        }
+        
         return 120
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
